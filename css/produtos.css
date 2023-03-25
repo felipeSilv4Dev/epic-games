@@ -63,3 +63,31 @@
   z-index: -1;
   top: 0.51rem;
 }
+
+/* itens */
+
+.itens {
+  gap: 0.625rem;
+  margin-bottom: 5rem;
+}
+.itens-conteudo {
+  padding-bottom: 1rem;
+}
+.itens-conteudo h2 {
+  font-size: 1rem;
+}
+.itens-conteudo img {
+  height: auto;
+}
+.itens-conteudo p {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--type-7);
+  line-height: 1.3rem;
+}
+
+.itens .itens-conteudo span {
+  font-size: 0.9rem;
+  position: relative;
+  bottom: -0.5rem;
+}

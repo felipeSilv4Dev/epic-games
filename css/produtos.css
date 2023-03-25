@@ -147,6 +147,10 @@
 a.free-btn {
   background-color: var(--type-5);
 }
+.img-info {
+  position: relative;
+  top: -0.7rem;
+}
 .img-info h3 {
   text-transform: initial;
   font-weight: 500;

@@ -1,0 +1,25 @@
+:root {
+  --bg-1: #313131;
+  --bg-2: #121212;
+  --bg-3: #202020;
+  --bg-4: #252525;
+  --type-1: #ffffff;
+  --type-2: #aaaaaa;
+  --type-3: #007aff;
+  --type-4: #666666;
+  --type-5: #000000;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.container-e-pad {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0rem 11rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}

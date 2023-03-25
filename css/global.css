@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--bg-2);
+  color: var(--type-1);
+}
+a,
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}

@@ -1,0 +1,88 @@
+.home {
+  margin-top: 1.75rem;
+}
+.home-menu {
+  margin-bottom: 1.75rem;
+  gap: 2rem;
+}
+.home-menu a {
+  color: var(--type-4);
+  font-size: 0.75rem;
+}
+.input input {
+  padding: 0.625rem 2rem 0.625rem 2.5rem;
+  border-radius: 200px;
+  background: var(--bg-3);
+  border: none;
+  color: var(--type-1);
+}
+.input input::placeholder {
+  color: var(--type-4);
+}
+.input img {
+  position: relative;
+  left: 2rem;
+  top: -0.09rem;
+}
+
+/* home-conteúdo */
+
+.home-conteudo {
+  gap: 1.5rem;
+}
+.conteudo {
+  position: relative;
+  align-self: start;
+}
+.conteudo img {
+  height: auto;
+  border-radius: 8px;
+}
+.conteudo-info {
+  left: 2.4rem;
+  top: 8.2rem;
+  position: absolute;
+}
+.conteudo-info p {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--type-1);
+}
+.conteudo-info p + p {
+  max-width: 34ch;
+  color: var(--type-1);
+  font-size: 1rem;
+}
+.conteudo-btn {
+  display: inline-block;
+  margin: 2.5rem 0 2rem;
+  padding: 0.825rem 1rem;
+  background-color: var(--type-1);
+  color: var(--type-5);
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.conteudo-lateral {
+  display: grid;
+  align-self: start;
+}
+.lateral-game {
+  gap: 1rem;
+}
+.lateral-game {
+  padding: 0.81rem 1rem;
+  border-radius: 16px;
+}
+.lateral-game:nth-child(1) {
+  background-color: var(--bg-4);
+}
+.lateral-game img {
+  max-width: 3.25rem;
+  height: auto;
+}
+.lateral-game h3 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-style: normal;
+  font-weight: initial;
+}

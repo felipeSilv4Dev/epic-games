@@ -23,7 +23,7 @@
 a.btn {
   color: var(--type-1);
   padding: 1rem 2rem;
-  background-color: var(--type-3);
+  background-color: var(--bg-5);
 }
 .menu-logo .logo {
   padding: 0;

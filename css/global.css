@@ -15,7 +15,6 @@ a {
 }
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-style: normal;
   background: var(--bg-2);
   color: var(--type-1);
@@ -25,5 +24,6 @@ h1,
 h2,
 h3,
 h4 {
+  font-weight: initial;
   text-transform: uppercase;
 }

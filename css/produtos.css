@@ -1,0 +1,65 @@
+.produtos {
+  margin-bottom: 5.5rem;
+}
+.produtos-intro {
+  margin: 1.2rem 0;
+  justify-content: space-between;
+}
+
+.intro-titulo {
+  gap: 0.75rem;
+}
+.intro-titulo h2 {
+  font-size: 1.125rem;
+}
+.intro-img {
+  gap: 1rem;
+}
+.intro-img img {
+  height: auto;
+  width: auto;
+  background-color: var(--bg-4);
+  padding: 8px 10px;
+  border-radius: 50%;
+}
+.intro-img img:first-child {
+  transform: rotate(180deg);
+}
+
+/* games  */
+
+.produtos-games {
+  flex: 1;
+  gap: 0.75rem;
+}
+.games img {
+  height: auto;
+}
+.games h2 {
+  margin: 0.5rem 0;
+  font-size: 0.81rem;
+}
+.games-preco {
+  gap: 0.5rem;
+}
+.games-preco span {
+  font-size: 0.9rem;
+}
+.games-preco span:first-child {
+  padding: 0 0.5rem;
+  background-color: var(--bg-5);
+  border-radius: 4px;
+}
+.preco-antigo {
+  color: var(--type-2);
+  position: relative;
+}
+.preco-antigo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(245, 245, 245, 0.6);
+  z-index: -1;
+  top: 0.51rem;
+}

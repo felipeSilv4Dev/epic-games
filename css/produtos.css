@@ -169,6 +169,7 @@ a.free-btn {
 
 .produtos-item-2 {
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .item-2 img {
   height: auto;
@@ -182,4 +183,23 @@ a.free-btn {
   margin-top: 0.938rem;
   font-size: 1rem;
   color: var(--type-7);
+}
+
+/* section free 2 */
+
+.free-img-2 {
+  gap: 2.6rem;
+}
+.img-conteudo-2 img {
+  height: auto;
+}
+.img-info-2 h3 {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-transform: initial;
+}
+.img-info-2 p {
+  margin-top: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--type-2);
 }

@@ -1,0 +1,44 @@
+.list-game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625rem;
+}
+
+.list {
+  padding-right: 0.625rem;
+  border-right: 1px solid var(--bg-6);
+}
+.list:last-child {
+  padding: 0;
+  border: none;
+}
+.list-intro {
+  justify-content: space-between;
+  margin-bottom: 1.375rem;
+}
+.list-intro h2 {
+  font-size: 1.375rem;
+}
+.list-intro a {
+  font-size: 0.8rem;
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: var(--type-6);
+}
+.list-img-game {
+  gap: 0.75rem;
+  margin-bottom: 8px;
+  padding-right: 3rem;
+}
+.list-img-game img {
+  height: auto;
+}
+.list-img-game h2 {
+  color: var(--type-6);
+  font-size: 0.875rem;
+}
+.list-img-game span {
+  color: var(--type-6);
+  font-size: 0.75rem;
+}

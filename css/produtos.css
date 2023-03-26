@@ -122,8 +122,40 @@
   font-size: 0.9rem;
   padding: 0.5rem 1.125rem;
   border: 1px solid;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-
+.free-intro a::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--bg-5);
+  transition: 0.8s;
+}
+.free-intro a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--bg-5);
+}
+.free-intro a:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+.free-intro a:hover::after {
+  height: 100%;
+  transition: 0.8s;
+}
 .free-img {
   display: grid;
   grid-template-columns: 1fr 1fr;

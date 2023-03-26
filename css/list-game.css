@@ -26,6 +26,40 @@
   border: 1px solid;
   border-radius: 5px;
   color: var(--type-6);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.list-intro a::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--bg-5);
+  transition: 0.8s;
+}
+.list-intro a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--bg-5);
+}
+.list-intro a:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+.list-intro a:hover::after {
+  height: 100%;
+  transition: 0.8s;
 }
 .list-img-game {
   gap: 0.75rem;

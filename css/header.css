@@ -13,7 +13,26 @@
   font-weight: 500;
   color: var(--type-2);
   font-size: 0.75rem;
+  position: relative;
 }
+.menu-list a::before {
+  content: "";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-5);
+}
+
+.menu a:hover {
+  color: var(--type-1);
+}
+.menu-list a:hover::before {
+  width: 100%;
+  transition: 0.8s;
+}
+
 .menu-sign {
   gap: 0.375rem;
 }
@@ -23,7 +42,41 @@
 a.btn {
   color: var(--type-1);
   padding: 1rem 2rem;
+  overflow: hidden;
+  position: relative;
   background-color: var(--bg-5);
+  z-index: 1;
+  transition: 0.8s;
+}
+a.btn::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--bg-7);
+  transition: 0.8s;
+}
+a.btn::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--bg-7);
+}
+a.btn:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+a.btn:hover::after {
+  height: 100%;
+  transition: 0.8s;
 }
 .menu-logo .logo {
   padding: 0;

@@ -11,12 +11,20 @@
   color: var(--type-4);
   font-size: 0.75rem;
 }
+.home-menu a:hover {
+  transition: 0.3s;
+  color: var(--type-1);
+}
 .input input {
   padding: 0.625rem 2rem 0.625rem 2.5rem;
   border-radius: 200px;
   background: var(--bg-3);
   border: none;
   color: var(--type-1);
+}
+.input input:hover {
+  transition: 0.6s;
+  background-color: var(--bg-6);
 }
 .input input::placeholder {
   color: var(--type-4);
@@ -63,8 +71,45 @@
   color: var(--type-5);
   font-size: 1rem;
   border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-.conteudo-lateral {
+.conteudo-btn::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--bg-5);
+  transition: 0.8s;
+}
+.conteudo-btn::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--bg-5);
+}
+.conteudo-btn:hover {
+  transition: 0.8s;
+  color: var(--type-1);
+}
+.conteudo-btn:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+.conteudo-btn:hover::after {
+  height: 100%;
+  transition: 0.8s;
+}
+.me .conteudo-lateral {
   display: grid;
   align-self: start;
 }

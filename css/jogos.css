@@ -76,6 +76,10 @@
   overflow: hidden;
   font-size: 0.875rem;
 }
+.detalhe-btn a:first-child {
+  background-color: var(--type-10);
+  border: none;
+}
 .detalhe-btn a::before {
   content: "";
   width: 50%;
@@ -109,6 +113,13 @@
 .detalhe-btn a:hover {
   transition: 0.8s;
   border: 1px solid var(--type-10);
+}
+.detalhe-btn a:first-child:hover::before,
+.detalhe-btn a:first-child:hover::after {
+  background-color: var(--type-11);
+}
+.detalhe-btn a:first-child:hover {
+  border: none;
 }
 .btn-detale-list {
   gap: 0.5rem;

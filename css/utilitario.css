@@ -6,6 +6,8 @@
   --bg-5: #007aff;
   --bg-6: #2a2a2a;
   --bg-7: #035ab9;
+  --bg-8: #3d3d3d;
+  --bg-9: #262626;
   --type-1: #ffffff;
   --type-2: #aaaaaa;
   --type-4: #666666;
@@ -16,6 +18,7 @@
   --type-9: #e7e7e7;
   --type-10: #e3322d;
   --type-11: #b7120e;
+  --type-12: #a8a8a8;
 }
 
 .container {

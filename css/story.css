@@ -59,3 +59,125 @@
 }
 
 /* edições */
+
+.edicoes {
+  display: grid;
+  gap: 1.275rem;
+}
+.edicoes-container img {
+  height: auto;
+}
+.edicoes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.2rem;
+  background-color: var(--bg-9);
+  border-radius: 4px;
+}
+.edicoes-container-img {
+  width: 100%;
+  border-radius: 4px;
+}
+.container-info-intro {
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.container-info-intro span {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: var(--type-6);
+  background: var(--bg-8);
+  border-radius: 4px;
+}
+.container-info-intro h2 {
+  color: var(--type-6);
+  font-size: 1rem;
+  font-weight: initial;
+}
+.edicoes-container-info {
+  padding: 2.4rem 2rem;
+}
+.edicoes-container-info p {
+  font-size: 1rem;
+  color: var(--type-12);
+}
+.edicoes-container-rodape {
+  justify-content: end;
+  gap: 1.375rem;
+  grid-column: 1/-1;
+  padding: 1.375rem 2.1rem;
+  border-top: 1px solid var(--bg-8);
+}
+
+.edicoes-container-rodape a {
+  border: 1px solid var(--type-7);
+  padding: 0.875rem 2rem;
+  text-align: center;
+  text-transform: none;
+  color: var(--type-1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+.btn-container-rodape {
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.edicoes-container-rodape a::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--type-10);
+  transition: 0.8s;
+}
+.edicoes-container-rodape a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--type-10);
+}
+.edicoes-container-rodape a:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+.edicoes-container-rodape a:hover::after {
+  height: 100%;
+  transition: 0.8s;
+}
+.edicoes-container-rodape a:hover {
+  transition: 0.8s;
+  border: 1px solid var(--type-10);
+}
+.edicoes-redes {
+  margin-top: 3.3rem;
+}
+.edicoes-redes h2 {
+  font-size: 1.375rem;
+  text-transform: initial;
+  color: var(--type-6);
+  margin-bottom: 1rem;
+}
+.edicoes-redes-img {
+  background-color: var(--bg-9);
+  margin-bottom: 3.3rem;
+  justify-content: center;
+  padding: 1.5rem 0;
+  border-radius: 4px;
+}
+.edicoes-redes-img img {
+  height: 2.5rem;
+  width: auto;
+  align-self: center;
+  padding: 7px 17px;
+}

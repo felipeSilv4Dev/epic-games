@@ -121,7 +121,7 @@
 .detalhe-btn a:first-child:hover {
   border: none;
 }
-.btn-detale-list {
+.btn-detalhe-list {
   gap: 0.5rem;
   justify-content: center;
 }

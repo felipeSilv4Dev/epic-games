@@ -1,0 +1,131 @@
+.jogo-h1 h1 {
+  text-transform: initial;
+  margin: 1.875rem 0;
+  font-size: 2rem;
+  color: var(--type-6);
+}
+.jogo img {
+  height: auto;
+}
+.jogo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3.3rem;
+}
+.jogo-texto {
+  margin-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+.jogo-texto img {
+  max-width: 8rem;
+  border-radius: 4px;
+}
+.jogo-texto h2 {
+  text-align: center;
+  text-transform: initial;
+  color: var(--type-6);
+}
+.jogo-texto p {
+  text-align: center;
+  text-transform: initial;
+  margin-top: 0.1rem;
+  color: var(--type-8);
+}
+.jogo-info {
+  display: grid;
+  justify-content: start;
+  gap: 0.7rem;
+}
+.nome-jogo {
+  border-radius: 10px;
+}
+.jogo-span-intro {
+  font-size: 0.875rem;
+  padding: 0.3rem;
+  background-color: var(--bg-6);
+  border-radius: 4px;
+}
+.detalhe-span {
+  margin-top: 1rem;
+  gap: 0.625rem;
+}
+.detalhe-span span {
+  font-size: 0.9rem;
+}
+.detalhe-span span:first-child {
+  padding: 0 0.5rem;
+  background-color: var(--type-10);
+  border-radius: 4px;
+}
+.detalhe-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  gap: 0.625rem;
+}
+.detalhe-btn a {
+  border: 1px solid var(--type-7);
+  padding: 0.875rem 2rem;
+  text-align: center;
+  text-transform: none;
+  color: var(--type-1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+.detalhe-btn a::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--type-10);
+  transition: 0.8s;
+}
+.detalhe-btn a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--type-10);
+}
+.detalhe-btn a:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+.detalhe-btn a:hover::after {
+  height: 100%;
+  transition: 0.8s;
+}
+.detalhe-btn a:hover {
+  transition: 0.8s;
+  border: 1px solid var(--type-10);
+}
+.btn-detale-list {
+  gap: 0.5rem;
+  justify-content: center;
+}
+.detalhe-extra {
+  justify-content: space-between;
+}
+
+.detalhe-extra {
+  border-bottom: 1px solid var(--bg-6);
+}
+.detalhe-extra p {
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+  color: var(--type-7);
+}
+.detalhe-extra p:last-child {
+  color: var(--type-1);
+}

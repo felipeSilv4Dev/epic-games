@@ -27,3 +27,7 @@ h4 {
   font-weight: initial;
   text-transform: uppercase;
 }
+.video {
+  border-radius: 20px;
+  background-color: aqua;
+}

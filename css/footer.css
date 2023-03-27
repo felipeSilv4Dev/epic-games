@@ -67,6 +67,9 @@
   justify-content: space-between;
   padding-bottom: 2.8rem;
 }
+.footer-rodape img {
+  height: auto;
+}
 .rodape {
   gap: 1rem;
 }

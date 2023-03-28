@@ -180,6 +180,18 @@
   width: auto;
   align-self: center;
   padding: 7px 17px;
+  transition: 0.6s;
+}
+.edicoes-redes-img img:hover {
+  animation: alternate edicoes-redes 0.6s infinite;
+}
+@keyframes edicoes-redes {
+  from {
+    transform: translate3d(0, -5px, 0);
+  }
+  to {
+    transform: translate3d(0, 5px, 0);
+  }
 }
 
 /* classsifição */
@@ -290,6 +302,7 @@ circle {
   font-size: 1rem;
   position: relative;
   border-bottom: 1px solid var(--bg-8);
+  cursor: pointer;
 }
 .especificacoes-container > h2::before {
   content: "";
@@ -301,7 +314,10 @@ circle {
   bottom: 0;
   background-color: var(--type-1);
 }
-
+.especificacoes-container > h2:hover::before {
+  transition: 0.3s;
+  background-color: var(--type-12);
+}
 .especificacoes-info h3 {
   font-size: 1rem;
   color: var(--type-7);

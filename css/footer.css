@@ -34,7 +34,10 @@
   border: 2px solid var(--type-6);
   transform: rotate(-90deg);
 }
-
+.intro-seta-footer img:hover {
+  background-color: var(--bg-5);
+  transition: 0.8s;
+}
 .footer span {
   grid-column: 1;
   font-size: 0.875rem;
@@ -69,6 +72,10 @@
 }
 .footer-rodape img {
   height: auto;
+}
+.footer-rodape img:hover {
+  opacity: 0.5;
+  transition: 0.6s;
 }
 .rodape {
   gap: 1rem;

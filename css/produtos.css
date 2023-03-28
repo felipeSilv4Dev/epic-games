@@ -22,6 +22,7 @@
   padding: 8px 10px;
   border-radius: 50%;
 }
+
 .intro-img img:first-child {
   transform: rotate(180deg);
 }
@@ -34,6 +35,10 @@
 }
 .games img {
   height: auto;
+}
+.produtos-games div a img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .games h2 {
   margin: 0.5rem 0;
@@ -79,6 +84,10 @@
 }
 .itens-conteudo img {
   height: auto;
+}
+.itens-conteudo img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .itens-conteudo p {
   margin-top: 0.5rem;
@@ -165,6 +174,10 @@
   height: auto;
   width: 100%;
 }
+.free-img img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 .free-img a {
   display: block;
   position: relative;
@@ -206,6 +219,10 @@ a.free-btn {
 .item-2 img {
   height: auto;
 }
+.item-2 img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 .item-2 h2 {
   margin-top: 1.875rem;
   text-transform: initial;
@@ -224,6 +241,10 @@ a.free-btn {
 }
 .img-conteudo-2 img {
   height: auto;
+}
+.img-conteudo-2 img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .img-info-2 h3 {
   margin-top: 1rem;

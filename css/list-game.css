@@ -69,6 +69,10 @@
 .list-img-game img {
   height: auto;
 }
+.list-game img:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 .list-img-game h2 {
   color: var(--type-6);
   font-size: 0.875rem;

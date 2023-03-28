@@ -63,17 +63,28 @@
 /* modificações extras dos index */
 
 /* cyberpunk */
-
 .punk .circle-1 {
   stroke-dashoffset: calc(252 - 158.76);
 }
 .punk .circle {
   stroke-dasharray: 25%;
 }
+
 /* assassin's creed */
 .assassins .circle-1 {
   stroke-dashoffset: calc(252 - 229.32);
 }
 .assassins .circle {
   stroke-dasharray: 32%;
+}
+
+/* fortnite */
+.fort .circle-1 {
+  stroke-dashoffset: calc(252 - 234.36);
+}
+.fort .circle-2 {
+  stroke-dashoffset: calc(252 - 209.16);
+}
+.fort .circle {
+  stroke-dasharray: 252;
 }

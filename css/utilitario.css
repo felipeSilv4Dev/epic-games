@@ -28,6 +28,10 @@
   --type-10: #26af99;
   --type-11: #0f927d;
 }
+.fort {
+  --type-10: #fe2a71;
+  --type-11: #d80941;
+}
 .container {
   max-width: 1300px;
   margin: 0 auto;

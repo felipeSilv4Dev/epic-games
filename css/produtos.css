@@ -56,20 +56,6 @@
   background-color: var(--bg-5);
   border-radius: 4px;
 }
-.preco-antigo {
-  color: var(--type-2);
-  position: relative;
-}
-.preco-antigo::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(245, 245, 245, 0.6);
-  z-index: -1;
-  top: 0.51rem;
-}
-
 /* itens */
 
 .itens {

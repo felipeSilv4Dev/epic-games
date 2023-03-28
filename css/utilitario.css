@@ -24,6 +24,10 @@
   --type-10: #a8a403;
   --type-11: #838007;
 }
+.assassins {
+  --type-10: #26af99;
+  --type-11: #0f927d;
+}
 .container {
   max-width: 1300px;
   margin: 0 auto;

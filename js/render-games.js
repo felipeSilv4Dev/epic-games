@@ -10,8 +10,6 @@ async function fetchGamesApi(url) {
   return creatHome(jsonGame);
 }
 
-// title.innerHTML = game[windowHref].title;
-
 function creatHome(game) {
   home.innerHTML = /*html*/ `
 	

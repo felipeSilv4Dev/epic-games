@@ -6,7 +6,8 @@
     "src": "/img/produtos/produtos-1.png",
     "oldPrice": 900,
     "newPrice": 850,
-    "popular": 0
+    "popular": 0,
+    "point": 3.5
   },
   {
     "id": 1,
@@ -16,7 +17,8 @@
     "newPrice": 2.999,
     "discount": 20,
     "popular": 0,
-    "order": 20
+    "order": 20,
+    "point": 4.6
   },
   {
     "id": 2,
@@ -25,7 +27,8 @@
     "src": "/img/produtos/produtos-3.png",
     "oldPrice": 3.199,
     "newPrice": 1.599,
-    "popular": 0
+    "popular": 0,
+    "point": 4.6
   },
   {
     "id": 3,
@@ -35,7 +38,8 @@
     "oldPrice": 2.195,
     "newPrice": 2000,
     "popular": 0,
-    "order": 50
+    "order": 50,
+    "point": 4.5
   },
   {
     "id": 4,
@@ -45,7 +49,8 @@
     "oldPrice": 4000,
     "newPrice": 2000,
     "popular": 0,
-    "order": 20
+    "order": 20,
+    "point": 4.6
   },
   {
     "id": 5,
@@ -56,7 +61,8 @@
     "percent": 25,
     "oldPrice": 1200,
     "newPrice": 900,
-    "order": 25
+    "order": 25,
+    "point": 5.0
   },
   {
     "id": 6,
@@ -66,7 +72,8 @@
     "popular": 1,
     "percent": 35,
     "oldPrice": 137,
-    "newPrice": 89.05
+    "newPrice": 89.05,
+    "point": 3.5
   },
   {
     "id": 7,
@@ -76,7 +83,8 @@
     "percent": 50,
     "popular": 1,
     "oldPrice": 3.599,
-    "newPrice": 1.599
+    "newPrice": 1.599,
+    "point": 3.5
   },
   {
     "id": 8,
@@ -87,7 +95,8 @@
     "popular": 1,
     "oldPrice": 139,
     "newPrice": 125.1,
-    "order": 10
+    "order": 10,
+    "point": 3.5
   },
   {
     "id": 9,
@@ -97,6 +106,7 @@
     "percent": 50,
     "popular": 1,
     "oldPrice": 4000,
-    "newPrice": 2000
+    "newPrice": 2000,
+    "point": 3.5
   }
 ]

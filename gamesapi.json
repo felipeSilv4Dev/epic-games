@@ -1,0 +1,102 @@
+[
+  {
+    "id": 0,
+    "discount": 10,
+    "title": "Valorant",
+    "src": "/img/produtos/produtos-1.png",
+    "oldPrice": 900,
+    "newPrice": 850,
+    "popular": 0
+  },
+  {
+    "id": 1,
+    "title": "Assassin's Creed Valhalla",
+    "src": "/img/produtos/produtos-2.png",
+    "oldPrice": 3.499,
+    "newPrice": 2.999,
+    "discount": 20,
+    "popular": 0,
+    "order": 20
+  },
+  {
+    "id": 2,
+    "discount": 50,
+    "title": "Red Dead ||",
+    "src": "/img/produtos/produtos-3.png",
+    "oldPrice": 3.199,
+    "newPrice": 1.599,
+    "popular": 0
+  },
+  {
+    "id": 3,
+    "discount": 50,
+    "title": "Fortnite",
+    "src": "/img/produtos/produtos-4.png",
+    "oldPrice": 2.195,
+    "newPrice": 2000,
+    "popular": 0,
+    "order": 50
+  },
+  {
+    "id": 4,
+    "discount": 20,
+    "title": "Cyberpunk 2077",
+    "src": "/img/produtos/produtos-5.png",
+    "oldPrice": 4000,
+    "newPrice": 2000,
+    "popular": 0,
+    "order": 20
+  },
+  {
+    "id": 5,
+    "discount": 0,
+    "title": "Gof of War Ragnarok",
+    "src": "/img/produtos/produtos-6.png",
+    "popular": 1,
+    "percent": 25,
+    "oldPrice": 1200,
+    "newPrice": 900,
+    "order": 25
+  },
+  {
+    "id": 6,
+    "discount": 0,
+    "title": "Kena Bridge os Sprits",
+    "src": "/img/produtos/produtos-7.png",
+    "popular": 1,
+    "percent": 35,
+    "oldPrice": 137,
+    "newPrice": 89.05
+  },
+  {
+    "id": 7,
+    "discount": 0,
+    "src": "/img/produtos/produtos-8.png",
+    "title": "Grand Theft Auto V",
+    "percent": 50,
+    "popular": 1,
+    "oldPrice": 3.599,
+    "newPrice": 1.599
+  },
+  {
+    "id": 8,
+    "discount": 0,
+    "title": "Sifu",
+    "src": "/img/produtos/produtos-9.png",
+    "percent": 10,
+    "popular": 1,
+    "oldPrice": 139,
+    "newPrice": 125.1,
+    "order": 10
+  },
+  {
+    "id": 9,
+    "discount": 0,
+    "title": "Farcry 6 Golden Edition",
+    "src": "/img/produtos/produtos-10.png",
+    "percent": 50,
+    "popular": 1,
+    "oldPrice": 4000,
+    "newPrice": 2000
+  }
+]

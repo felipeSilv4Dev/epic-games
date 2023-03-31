@@ -7,7 +7,8 @@
     "oldPrice": 900,
     "newPrice": 850,
     "popular": 0,
-    "point": 3.5
+    "point": 3.5,
+    "srcVideo": "../trailer-jogos/valorant-trailer.mp4"
   },
   {
     "id": 1,
@@ -18,7 +19,8 @@
     "discount": 20,
     "popular": 0,
     "order": 20,
-    "point": 4.6
+    "point": 4.6,
+    "srcVideo": "../trailer-jogos/assassins-trailer.mp4"
   },
   {
     "id": 2,
@@ -28,7 +30,8 @@
     "oldPrice": 3.199,
     "newPrice": 1.599,
     "popular": 0,
-    "point": 4.6
+    "point": 4.6,
+    "srcVideo": "../trailer-jogos/red-trailer.mp4"
   },
   {
     "id": 3,
@@ -39,7 +42,8 @@
     "newPrice": 2000,
     "popular": 0,
     "order": 50,
-    "point": 4.5
+    "point": 4.5,
+    "srcVideo": "../trailer-jogos/fort-trailer.mp4"
   },
   {
     "id": 4,
@@ -50,7 +54,8 @@
     "newPrice": 2000,
     "popular": 0,
     "order": 20,
-    "point": 4.6
+    "point": 4.6,
+    "srcVideo": "../trailer-jogos/cyber-trailer.mp4"
   },
   {
     "id": 5,
@@ -62,7 +67,8 @@
     "oldPrice": 1200,
     "newPrice": 900,
     "order": 25,
-    "point": 5.0
+    "point": 5.0,
+    "srcVideo": "../trailer-jogos/god-trailer.mp4"
   },
   {
     "id": 6,
@@ -73,7 +79,8 @@
     "percent": 35,
     "oldPrice": 137,
     "newPrice": 89.05,
-    "point": 3.5
+    "point": 3.5,
+    "srcVideo": "../trailer-jogos/kena-trailer.mp4"
   },
   {
     "id": 7,
@@ -84,7 +91,8 @@
     "popular": 1,
     "oldPrice": 3.599,
     "newPrice": 1.599,
-    "point": 3.5
+    "point": 3.5,
+    "srcVideo": "../trailer-jogos/gta-trailer.mp4"
   },
   {
     "id": 8,
@@ -96,7 +104,8 @@
     "oldPrice": 139,
     "newPrice": 125.1,
     "order": 10,
-    "point": 3.5
+    "point": 3.5,
+    "srcVideo": "../trailer-jogos/sifu-trailer.mp4"
   },
   {
     "id": 9,
@@ -107,6 +116,7 @@
     "popular": 1,
     "oldPrice": 4000,
     "newPrice": 2000,
-    "point": 3.5
+    "point": 3.5,
+    "srcVideo": "../trailer-jogos/furcry-trailer.mp4"
   }
 ]

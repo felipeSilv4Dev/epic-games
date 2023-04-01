@@ -1,5 +1,6 @@
-const gamesEl = document.querySelectorAll(".produtos-games");
+export default function gamesId() {}
 
+const gamesEl = document.querySelectorAll(".produtos-games");
 async function fetchGamesApi() {
   const response = await fetch("./gamesapi.json");
   const gamesData = await response.json();
@@ -37,6 +38,7 @@ async function fetchGamesApi() {
       }
     });
   }
+
   renderDicount();
 
   function renderPopular() {

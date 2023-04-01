@@ -5,11 +5,10 @@ const creatHome = (games) => {
   console.log(window.location.href);
   const gameId = +window.location.href.split("=")[1];
 
-  if (!!gameId && !!home) {
-    const game = games.find((item) => item.id === gameId);
+  const game = games.find((item) => item.id === gameId);
 
-    if (game) {
-      home.innerHTML = /*html*/ `
+  if (game) {
+    home.innerHTML = /*html*/ `
 			<div>
 							<video
 								src="../${game.srcVideo}"
@@ -92,7 +91,6 @@ const creatHome = (games) => {
 								</div>
 							</div>
 						</div>`;
-    }
   }
 };
 
@@ -100,7 +98,7 @@ const fetchGamesApi = async (url) => {
   const fetchGame = await fetch(url);
   const gamesData = await fetchGame.json();
 
-  if (!!gamesData.length) {
+  if (gamesData.length) {
     creatHome(gamesData);
   }
 };

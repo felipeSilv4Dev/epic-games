@@ -78,7 +78,7 @@ async function fetchGamesApi() {
 						<div class="games">
 						<a href="./jogos/games.html?id=${game.id}">
 						<img
-						src="${game.src}"
+						src="./${game.src}"
 						width="213"
 						height="284"
 						alt="${game.title}"

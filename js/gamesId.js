@@ -1,4 +1,3 @@
-export default function gamesId() {}
 const gamesEl = document.querySelectorAll(".produtos-games");
 
 async function fetchGamesApi() {

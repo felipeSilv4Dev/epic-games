@@ -1,17 +1,17 @@
-export default function renderGamer() {}
-
 const home = document.querySelector(".home");
-const windowHref = +window.location.href.split("=")[1];
+const windowHref = window.location.href.split("=")[1];
+if (windowHref) {
+  async function fetchGamesApi(url) {
+    const fetchGame = await fetch(url);
+    const jsonGame = await fetchGame.json();
 
-async function fetchGamesApi() {
-  const fetchGame = await fetch("../gamesapi.json");
-  const jsonGame = await fetchGame.json();
+    creatHome(jsonGame);
+  }
 
-  creatHome(jsonGame);
-}
+  fetchGamesApi("../gamesapi.json");
 
-function creatHome(game) {
-  home.innerHTML = /*html*/ `
+  function creatHome(game) {
+    home.innerHTML = /*html*/ `
 	    
   	<div class="home-menu flex">
   	<div class="input flex">
@@ -110,6 +110,5 @@ function creatHome(game) {
   		</div>
   	</div>
   </div>`;
+  }
 }
-
-fetchGamesApi();

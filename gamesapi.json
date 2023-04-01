@@ -8,7 +8,7 @@
     "newPrice": 850,
     "popular": 0,
     "point": 3.5,
-    "srcVideo": "../trailer-jogos/valorant-trailer.mp4",
+    "srcVideo": "trailer-jogos/valorant-trailer.mp4",
     "srcName": "img/img-jogos/valorant/valorant-nome.png"
   },
   {
@@ -21,7 +21,7 @@
     "popular": 0,
     "order": 20,
     "point": 4.6,
-    "srcVideo": "../trailer-jogos/assassins-trailer.mp4",
+    "srcVideo": "trailer-jogos/assassins-trailer.mp4",
     "srcName": "img/img-jogos/assasins/assassins-nome.png"
   },
   {
@@ -33,7 +33,7 @@
     "newPrice": 1.599,
     "popular": 0,
     "point": 4.6,
-    "srcVideo": "../trailer-jogos/red-trailer.mp4",
+    "srcVideo": "trailer-jogos/red-trailer.mp4",
     "srcName": "img/img-jogos/red/red-nome.png"
   },
   {
@@ -46,7 +46,7 @@
     "popular": 0,
     "order": 50,
     "point": 4.5,
-    "srcVideo": "../trailer-jogos/fort-trailer.mp4",
+    "srcVideo": "trailer-jogos/fort-trailer.mp4",
     "srcName": "img/img-jogos/fortnite/fort-nome.png"
   },
   {
@@ -59,7 +59,7 @@
     "popular": 0,
     "order": 20,
     "point": 4.6,
-    "srcVideo": "../trailer-jogos/cyber-trailer.mp4",
+    "srcVideo": "trailer-jogos/cyber-trailer.mp4",
     "srcName": "img/img-jogos/cyberpunk/cyber-nome.png"
   },
   {
@@ -73,7 +73,7 @@
     "newPrice": 900,
     "order": 25,
     "point": 5.0,
-    "srcVideo": "../trailer-jogos/god-trailer.mp4",
+    "srcVideo": "trailer-jogos/god-trailer.mp4",
     "srcName": "img/img-jogos/god-of-war/god-nome.png"
   },
   {
@@ -86,7 +86,7 @@
     "oldPrice": 137,
     "newPrice": 89.05,
     "point": 3.5,
-    "srcVideo": "../trailer-jogos/kena-trailer.mp4",
+    "srcVideo": "trailer-jogos/kena-trailer.mp4",
     "srcName": "img/img-jogos/kena/kena-img-4.png"
   },
   {
@@ -99,7 +99,7 @@
     "oldPrice": 3.599,
     "newPrice": 1.599,
     "point": 3.5,
-    "srcVideo": "../trailer-jogos/gta-trailer.mp4",
+    "srcVideo": "trailer-jogos/gta-trailer.mp4",
     "srcName": "img/img-jogos/gta/gta-nome.png"
   },
   {
@@ -113,7 +113,7 @@
     "newPrice": 125.1,
     "order": 10,
     "point": 3.5,
-    "srcVideo": "../trailer-jogos/sifu-trailer.mp4",
+    "srcVideo": "trailer-jogos/sifu-trailer.mp4",
     "srcName": "img/img-jogos/sifu/sifu-nome.png"
   },
   {
@@ -126,7 +126,7 @@
     "oldPrice": 4000,
     "newPrice": 2000,
     "point": 3.5,
-    "srcVideo": "../trailer-jogos/furcry-trailer.mp4",
+    "srcVideo": "trailer-jogos/furcry-trailer.mp4",
     "srcName": "img/img-jogos/farcry/far-nome.png"
   }
 ]

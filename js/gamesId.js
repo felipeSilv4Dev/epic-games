@@ -1,8 +1,8 @@
 export default function gamesId() {}
 const gamesEl = document.querySelectorAll(".produtos-games");
 
-async function fetchGamesApi(url) {
-  const response = await fetch(url);
+async function fetchGamesApi() {
+  const response = await fetch("./gamesapi.json");
   const gamesData = await response.json();
 
   function renderDicount() {
@@ -96,4 +96,4 @@ async function fetchGamesApi(url) {
   }
   renderOrder();
 }
-fetchGamesApi("./gamesapi.json");
+fetchGamesApi();

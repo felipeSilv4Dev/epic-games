@@ -3,16 +3,16 @@ export default function renderGamer() {}
 const home = document.querySelector(".home");
 const windowHref = +window.location.href.split("=")[1];
 
-async function fetchGamesApi(url) {
-  const fetchGame = await fetch(url);
+async function fetchGamesApi() {
+  const fetchGame = await fetch("../gamesapi.json");
   const jsonGame = await fetchGame.json();
 
-  return creatHome(jsonGame);
+  creatHome(jsonGame);
 }
 
 function creatHome(game) {
   home.innerHTML = /*html*/ `
-	
+	    
   	<div class="home-menu flex">
   	<div class="input flex">
   		<img src="../img/home/lupa.svg" width="20" height="20" alt="lupa" />
@@ -33,7 +33,7 @@ function creatHome(game) {
   		<video
   			src="${game[windowHref].srcVideo}"
   			muted
-  			poster="${game[windowHref].srcImgName}"
+  			poster="${game[windowHref].src}"
   			autoplay
   			loop
   		>
@@ -41,7 +41,7 @@ function creatHome(game) {
   		</video>
   		<div class="jogo-texto flex">
   			<img
-  				src="${game[windowHref].srcImg5}"
+  				src="${game[windowHref].src}"
   				width="348"
   				height="196"
   				alt="imgem do jogo"
@@ -57,7 +57,7 @@ function creatHome(game) {
   		<div>
   			<img
   				class="nome-jogo"
-  				src="${game[windowHref].srcGif}"
+  				src="${game[windowHref].src}"
   				width="1056"
   				height="594"
   				alt="${game[windowHref].title}"
@@ -66,7 +66,7 @@ function creatHome(game) {
   		<div class="jogo-info-detalhe">
   			<span class="jogo-span-intro">Jogo Base</span>
   			<div class="detalhe-span flex">
-  				<span>${game[windowHref].number}</span>
+  				<span>${game[windowHref].title}</span>
   				<span class="preco-antigo">₹${game[windowHref].oldPrice}</span>
   				<span>₹${game[windowHref].newPrice}</span>
   			</div>
@@ -87,11 +87,11 @@ function creatHome(game) {
   			<div>
   				<div class="detalhe-extra flex">
   					<p>Empresa</p>
-  					<p>${game[windowHref].company}</p>
+  					<p>${game[windowHref].title}</p>
   				</div>
   				<div class="detalhe-extra flex">
   					<p>Desenvolvedor</p>
-  					<p>${game[windowHref].developer}</p>
+  					<p>${game[windowHref].title}</p>
   				</div>
   				<div class="detalhe-extra flex">
   					<p>Data de lançamento</p>
@@ -112,4 +112,4 @@ function creatHome(game) {
   </div>`;
 }
 
-fetchGamesApi("./gamesapi.json");
+fetchGamesApi();

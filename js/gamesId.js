@@ -14,7 +14,7 @@ async function fetchGamesApi() {
           .map((game) => {
             return (game = ` <div class="games">
 	
-					<a href="../jogos/games.html?id=${game.id}">
+					<a href="./jogos/games.html?id=${game.id}">
 	
 					 <img
 						 src="${game.src}"
@@ -50,7 +50,7 @@ async function fetchGamesApi() {
           .map((game) => {
             return (game = ` 
 						<div class="games">
-					<a href="../jogos/games.html?id=${game.id}">
+					<a href="./jogos/games.html?id=${game.id}">
 					 <img
 						 src="${game.src}"
 						 width="213"

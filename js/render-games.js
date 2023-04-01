@@ -1,38 +1,40 @@
 export default function renderGamer() {}
 
+const gameId = +window.location.href.split("=")[1];
 const home = document.querySelector(".jogo");
-const windowHref = +window.location.href.split("=")[1];
 
 async function fetchGamesApi(url) {
   const fetchGame = await fetch(url);
-  const jsonGame = await fetchGame.json();
+  const gamesData = await fetchGame.json();
 
-  creatHome(jsonGame);
+  creatHome(gamesData);
 }
-
-fetchGamesApi("../gamesapi.json");
-
-function creatHome(game) {
-  home.innerHTML = /*html*/ `
+if (gameId) {
+  await fetchGamesApi("../gamesapi.json");
+}
+function creatHome(games) {
+  const game = games.find((item) => item.id === gameId);
+  if (game) {
+    home.innerHTML = /*html*/ `
 	<div>
           <video
-            src="${game[windowHref].srcVideo}"
+            src="${game.srcVideo}"
             muted
-            poster="${game[windowHref].srcNome}"
+            poster="${game.srcNome}"
             autoplay
             loop
           >
-            <source src="${game[windowHref].srcVideo}" />
+            <source src="${game.srcVideo}" />
           </video>
           <div class="jogo-texto flex">
             <img
-              src="../${game[windowHref].srcName}"
+              src="../${game.srcName}"
               width="348"
               height="196"
               alt="imgem do jogo"
             />
             <div>
-              <h2>${game[windowHref].title}</h2>
+              <h2>${game.title}</h2>
               <p>Trailer</p>
             </div>
           </div>
@@ -42,19 +44,19 @@ function creatHome(game) {
           <div>
             <img
               class="nome-jogo"
-              src="../${game[windowHref].srcName}"
+              src="../${game.srcName}"
               width="1056"
               height="594"
-              alt="${game[windowHref].title}"
+              alt="${game.title}"
             />
           </div>
 
           <div class="jogo-info-detalhe">
             <span class="jogo-span-intro">Jogo Base</span>
             <div class="detalhe-span flex">
-              <span>${game[windowHref].title}</span>
-              <span class="preco-antigo">${game[windowHref].title}</span>
-              <span>${game[windowHref].title}</span>
+              <span>${game.title}</span>
+              <span class="preco-antigo">${game.title}</span>
+              <span>${game.title}</span>
             </div>
 
             <div class="detalhe-btn">
@@ -74,18 +76,18 @@ function creatHome(game) {
             <div>
               <div class="detalhe-extra flex">
                 <p>Empresa</p>
-                <p>${game[windowHref].title}</p>
+                <p>${game.title}</p>
               </div>
               <div class="detalhe-extra flex">
                 <p>Desenvolvedor</p>
-                <p>${game[windowHref].title}</p>
+                <p>${game.title}</p>
               </div>
               <div class="detalhe-extra flex">
                 <p>Data de lançamento</p>
-                <p>${game[windowHref].title}</p>
+                <p>${game.title}</p>
               </div>
               <div class="detalhe-extra flex">
-                <p>${game[windowHref].title}</p>
+                <p>${game.title}</p>
                 <img
                   src="../img/produtos/logo-w.svg"
                   width="24"
@@ -96,4 +98,5 @@ function creatHome(game) {
             </div>
           </div>
         </div>`;
+  }
 }

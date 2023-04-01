@@ -96,4 +96,4 @@ async function fetchGamesApi(url) {
   }
   renderOrder();
 }
-fetchGamesApi("../gamesapi.json");
+fetchGamesApi("./gamesapi.json");

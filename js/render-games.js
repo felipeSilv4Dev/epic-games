@@ -112,4 +112,4 @@ function creatHome(game) {
   </div>`;
 }
 
-fetchGamesApi("/gamesapi.json");
+fetchGamesApi("../gamesapi.json");

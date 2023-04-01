@@ -3,7 +3,7 @@ export default function gamesId() {}
 const gamesEl = document.querySelectorAll(".produtos-games");
 
 async function fetchGamesApi() {
-  const response = await fetch("../gamesapi.json");
+  const response = await fetch("./gamesapi.json");
   const gamesData = await response.json();
 
   function renderDicount() {
@@ -78,9 +78,9 @@ async function fetchGamesApi() {
           .map((game) => {
             return (game = ` 
 						<div class="games">
-						<a href="../jogos/games.html?id=${game.id}">
+						<a href="./jogos/games.html?id=${game.id}">
 						<img
-						src="../${game.src}"
+						src="./${game.src}"
 						width="213"
 						height="284"
 						alt="${game.title}"

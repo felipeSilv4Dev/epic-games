@@ -41,7 +41,7 @@ function creatHome(game) {
   		</video>
   		<div class="jogo-texto flex">
   			<img
-  				src="../${game[windowHref].src}"
+  				src="../${game[windowHref].srcName}"
   				width="348"
   				height="196"
   				alt="imgem do jogo"
@@ -57,7 +57,7 @@ function creatHome(game) {
   		<div>
   			<img
   				class="nome-jogo"
-  				src="../${game[windowHref].src}"
+  				src="../${game[windowHref].srcName}"
   				width="1056"
   				height="594"
   				alt="${game[windowHref].title}"

@@ -135,7 +135,6 @@ const creatStory = (games) => {
 		</div>
 	</div>
 </div>`;
-  console.log(storyTexto);
   storyTexto.innerHTML = /*html*/ `
 <h2>${game.title}</h2>
 <p>Inclui ${game.title}: Modo História.</p>
@@ -213,6 +212,42 @@ const creatStory = (games) => {
 `;
 };
 
+const creatEditions = (games) => {
+  const gameId = +window.location.href.split("=")[1];
+  const game = games.find((item) => item.id === gameId);
+  const detalheSpan = document.querySelectorAll(
+    ".edicoes-container .detalhe-span"
+  );
+  const edicoesContainerH2 = document.querySelector(".container-info-intro h2");
+  edicoesContainerH2.innerText = game.title;
+
+  const edicoesImg = document.querySelectorAll(".edicoes-container-img");
+  edicoesImg.forEach((img) => {
+    img.innerHTML = /*html */ ` <img
+		src="../${game.srcName}"
+		width="348"
+		height="196"
+	 alt="jogo ${game.title}"
+	 />`;
+  });
+
+  const edicoesImg1 = document.querySelector(".edicoes-container-img");
+
+  edicoesImg1.innerHTML = /*html */ ` <img
+	src="../${game.srcImg5}"
+	width="348"
+	height="196"
+	alt="jogo ${game.title}"
+ />`;
+
+  detalheSpan.forEach((detalheSpan) => {
+    detalheSpan.innerHTML = /*html */ `
+    <span>-${game.percentage}%</span>
+    <span class="preco-antigo">₹${game.oldPrice}</span>
+    <span>₹${game.newPrice}</span>`;
+  });
+};
+
 const fetchGamesApi = async (url) => {
   const fetchGame = await fetch(url);
   const gamesData = await fetchGame.json();
@@ -220,6 +255,7 @@ const fetchGamesApi = async (url) => {
   if (gamesData.length) {
     creatHome(gamesData);
     creatStory(gamesData);
+    creatEditions(gamesData);
   }
 };
 

@@ -74,8 +74,9 @@
   background-color: var(--bg-9);
   border-radius: 4px;
 }
-.edicoes-container-img {
+.edicoes-container-img img {
   width: 100%;
+  height: 100%;
   border-radius: 4px;
 }
 .container-info-intro {

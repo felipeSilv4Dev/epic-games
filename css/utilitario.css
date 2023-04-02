@@ -16,22 +16,38 @@
   --type-7: #a0a0a0;
   --type-8: #a6a6a6;
   --type-9: #e7e7e7;
-  --type-10: #e3322d;
-  --type-11: #b7120e;
+  --type-10: #f40708;
+  --type-11: #a90905;
   --type-12: #a8a8a8;
 }
 
+.valoran {
+  --type-10: #f23c53;
+  --type-11: #a72a3a;
+}
 .cyber {
   --type-10: #a8a403;
-  --type-11: #838007;
+  --type-11: #7c7902;
 }
 .assassins {
   --type-10: #26af99;
   --type-11: #0f927d;
 }
 .fort {
-  --type-10: #fe2a71;
-  --type-11: #d80941;
+  --type-10: #561e9f;
+  --type-11: #3a156b;
+}
+.god {
+  --type-10: #0466a4;
+  --type-11: #003a5f;
+}
+.kena {
+  --type-10: #00b548;
+  --type-11: #008636;
+}
+.far {
+  --type-10: #f72f0d;
+  --type-11: #971600;
 }
 .container {
   max-width: 1300px;
@@ -77,15 +93,4 @@
 }
 .assassins .circle {
   stroke-dasharray: 32%;
-}
-
-/* fortnite */
-.fort .circle-1 {
-  stroke-dashoffset: calc(252 - 234.36);
-}
-.fort .circle-2 {
-  stroke-dashoffset: calc(252 - 209.16);
-}
-.fort .circle {
-  stroke-dasharray: 252;
 }

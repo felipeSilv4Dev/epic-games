@@ -16,7 +16,7 @@ const creatHome = (games) => {
 							<video
 								src="../${game.srcVideo}"
 								muted
-								poster="../${game.srcNome}"
+								poster="../${game.srcName}"
 								autoplay
 								loop
 							>

@@ -16,12 +16,13 @@
   --type-7: #a0a0a0;
   --type-8: #a6a6a6;
   --type-9: #e7e7e7;
-  --type-10: #f40708;
-  --type-11: #a90905;
+  --type-10: #ca100b;
+  --type-11: #730a06;
   --type-12: #a8a8a8;
 }
 
-.valoran {
+.valoran,
+.gta {
   --type-10: #f23c53;
   --type-11: #a72a3a;
 }
@@ -37,14 +38,12 @@
   --type-10: #561e9f;
   --type-11: #3a156b;
 }
-.god {
+.god,
+.kena {
   --type-10: #0466a4;
   --type-11: #003a5f;
 }
-.kena {
-  --type-10: #00b548;
-  --type-11: #008636;
-}
+
 .far {
   --type-10: #f72f0d;
   --type-11: #971600;

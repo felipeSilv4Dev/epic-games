@@ -1,4 +1,5 @@
 export default function renderGamer() {}
+
 const creatHome = (games) => {
   const html = document.querySelector("html title");
   const home = document.querySelector(".jogo");
@@ -28,7 +29,7 @@ const creatHome = (games) => {
 		</video>
 		<div class="jogo-texto flex">
 		<img
-		src="../${game.srcName}"
+		src="../${game.srcImg5}"
 		width="348"
 		height="196"
 		alt="jogo ${game.title}"
@@ -101,12 +102,124 @@ const creatHome = (games) => {
   }
 };
 
+const creatStory = (games) => {
+  const gameId = +window.location.href.split("=")[1];
+  const game = games.find((item) => item.id === gameId);
+  const storypIntro = document.querySelector(".story-p-intro");
+  const storyTexto = document.querySelector(".story-texto");
+
+  storypIntro.innerHTML = /*html*/ ` <p>
+	Vencedor de mais de 175 prêmios de Jogo do Ano e avaliado com mais de
+	250 notas máximas, ${game.title} esse jogo  é uma
+	história épica de honra e lealdade no alvorecer dos tempos modernos.
+	Inclui Modo História e ${game.title} Online.
+</p>
+
+<div class="story-p-info flex">
+	<div class="story-info">
+		<p>Gêneros</p>
+		<div class="story-info-caracteristicas flex">
+			<span>Ação</span>
+			<span>${game.characteristics}</span>
+			<span>Mundo Aberto</span>
+		</div>
+	</div>
+
+	<div class="story-info">
+		<p>Características</p>
+		<div class="story-info-caracteristicas flex">
+		<span>Divertido</span>
+		<span>História</span>
+		<span>Mundo Aberto</span>
+		<span> Jogos para Um Jogador</span>
+		</div>
+	</div>
+</div>`;
+  console.log(storyTexto);
+  storyTexto.innerHTML = /*html*/ `
+<h2>${game.title}</h2>
+<p>Inclui ${game.title}: Modo História.</p>
+<p>
+	Vencedor de mais de 175 prêmios de Jogo do Ano e avaliado com mais de
+	250 notas máximas,${game.title} é uma história épica de
+	honra e lealdade no alvorecer dos tempos modernos.
+</p>
+<p>
+	${game.title} é um RPG de ação e aventura em mundo aberto
+	ambientado na megalópole de Night City, onde você é um mercenário
+	cyberpunk envolvido em uma intensa luta pela sobrevivência. Com
+	diversas melhorias e conteúdo adicional gratuito, personalize o seu
+	personagem e o seu estilo de jogo conforme aceita trabalhos, construa
+	uma reputação e desbloqueie melhorias. Seus relacionamentos e suas
+	escolhas moldarão a história e o mundo ao seu redor. Aqui nascem as
+	lendas. Qual será a sua?
+</p>
+<p>
+	${game.title} também inclui o mundo compartilhado Receba
+	uma coleção de itens gratuitos, incluindo novas armas de fogo e corpo
+	a corpo, personalizações adicionais e muito mais. fronteira dos
+	Estados Unidos. Monte um acampamento, cavalgue com ou sem um bando e
+	explore tudo, das montanhas nevadas no norte aos pântanos do sul, de
+	postos remotos a fazendas agitadas e cidades vibrantes. Vá atrás de
+	recompensas, cace, pesque e negocie, procure tesouros exóticos, toque
+	sua própria destilaria clandestina de Moonshine ou se torne
+	Naturalista para aprender os segredos do reino animal e muito mais num
+	mundo rico em detalhes. Inclui todos os recursos, conteúdos e
+	melhorias adicionados desde o lançamento.
+</p>
+
+<div class="story-texto-img">
+	<div>
+		<img
+			src="../${game.srcImg1}"
+			width="518"
+			height="295"
+			alt="imagem do jogo ${game.title}"
+		/>
+	</div>
+	<div>
+		<img
+			src="../${game.srcImg2}"
+			width="518"
+			height="295"
+			alt="imagem do jogo ${game.title}"
+		/>
+	</div>
+	<div>
+		<img
+			src="../${game.srcImgp}"
+			width="1056"
+			height="594"
+			alt="imagem do jogdo ${game.title}"
+		/>
+	</div>
+	<div>
+		<img
+			src="../${game.srcImg3}"
+			width="518"
+			height="295"
+			alt="imagem do jogo ${game.title}"
+		/>
+	</div>
+	<div>
+		<img
+			src="../${game.srcImg4}"
+			width="518"
+			height="295"
+			alt="imagem do jogo ${game.title}"
+		/>
+	</div>
+</div>
+`;
+};
+
 const fetchGamesApi = async (url) => {
   const fetchGame = await fetch(url);
   const gamesData = await fetchGame.json();
 
   if (gamesData.length) {
     creatHome(gamesData);
+    creatStory(gamesData);
   }
 };
 

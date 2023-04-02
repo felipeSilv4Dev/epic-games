@@ -11,10 +11,16 @@
     "src": "img/produtos/produtos-1.png",
     "srcGif": "img/img-jogos/valorant/valorant-img-p-g.gif",
     "srcVideo": "trailer-jogos/valorant-trailer.mp4",
-    "srcName": "img/img-jogos/valorant/valorant-nome.png",
+    "srcImg1": "img/img-jogos/valorant/valorant-img-1.png",
+    "srcImg2": "img/img-jogos/valorant/valorant-img-2.png",
+    "srcImgp": "img/img-jogos/valorant/valorant-img-p.png",
+    "srcImg3": "img/img-jogos/valorant/valorant-img-3.png",
+    "srcImg4": "img/img-jogos/valorant/valorant-img-4.png",
+    "srcImg5": "img/img-jogos/valorant/valorant-img-5.png",
     "percentage": 10,
     "company": "Riot Games",
-    "date": "04/11/2"
+    "date": "04/11/2",
+    "characteristics": "Tiro"
   },
   {
     "id": 1,
@@ -30,9 +36,16 @@
     "srcGif": "img/img-jogos/assassins/assassins-img-p-g.gif",
     "srcVideo": "trailer-jogos/assassins-trailer.mp4",
     "srcName": "img/img-jogos/assassins/assassins-nome.png",
+    "srcImg1": "img/img-jogos/assassins/assassins-img-1.png",
+    "srcImg2": "img/img-jogos/assassins/assassins-img-2.png",
+    "srcImgp": "img/img-jogos/assassins/assassins-img-p.png",
+    "srcImg3": "img/img-jogos/assassins/assassins-img-3.png",
+    "srcImg4": "img/img-jogos/assassins/assassins-img-4.png",
+    "srcImg5": "img/img-jogos/assassins/assassins-img-5.png",
     "percentage": 20,
     "company": "Ubisoft Montrea",
-    "date": "17/11/20"
+    "date": "17/11/20",
+    "characteristics": "RPG"
   },
   {
     "id": 2,
@@ -47,9 +60,16 @@
     "src": "img/produtos/produtos-3.png",
     "srcVideo": "trailer-jogos/red-trailer.mp4",
     "srcName": "img/img-jogos/red/red-nome.png",
+    "srcImg1": "img/img-jogos/red/red-img-1.png",
+    "srcImg2": "img/img-jogos/red/red-img-2.png",
+    "srcImgp": "img/img-jogos/red/red-img-p.png",
+    "srcImg3": "img/img-jogos/red/red-img-3.png",
+    "srcImg4": "img/img-jogos/red/red-img-4.png",
+    "srcImg5": "img/img-jogos/red/red-img-5.png",
     "percentage": 50,
     "company": "Rockstar Games",
-    "date": "05/11/19"
+    "date": "05/11/19",
+    "characteristics": "Narração"
   },
   {
     "id": 3,
@@ -65,9 +85,16 @@
     "src": "img/produtos/produtos-4.png",
     "srcVideo": "trailer-jogos/fort-trailer.mp4",
     "srcName": "img/img-jogos/fortnite/fort-nome.png",
+    "srcImg1": "img/img-jogos/fortnite/fort-img-1.png",
+    "srcImg2": "img/img-jogos/fortnite/fort-img-2.png",
+    "srcImgp": "img/img-jogos/fortnite/fort-img-p.png",
+    "srcImg3": "img/img-jogos/fortnite/fort-img-3.png",
+    "srcImg4": "img/img-jogos/fortnite/fort-img-4.png",
+    "srcImg5": "img/img-jogos/fortnite/fort-img-5.png",
     "percentage": 50,
     "company": "Epic Games",
-    "date": "21/07/17"
+    "date": "21/07/17",
+    "characteristics": "Aventura"
   },
   {
     "id": 4,
@@ -83,9 +110,16 @@
     "srcGif": "img/img-jogos/cyberpunk/cyber-img-p-g.gif",
     "srcVideo": "trailer-jogos/cyber-trailer.mp4",
     "srcName": "img/img-jogos/cyberpunk/cyber-nome.png",
+    "srcImg1": "img/img-jogos/cyberpunk/cyber-img-1.png",
+    "srcImg2": "img/img-jogos/cyberpunk/cyber-img-2.png",
+    "srcImgp": "img/img-jogos/cyberpunk/cyber-img-p.png",
+    "srcImg3": "img/img-jogos/cyberpunk/cyber-img-3.png",
+    "srcImg4": "img/img-jogos/cyberpunk/cyber-img-4.png",
+    "srcImg5": "img/img-jogos/cyberpunk/cyber-img-5.png",
     "percentage": 20,
     "company": "CD Projekt Red",
-    "date": "09/12/20"
+    "date": "09/12/20",
+    "characteristics": "RPG"
   },
   {
     "id": 5,
@@ -102,9 +136,16 @@
     "srcGif": "img/img-jogos/god-of-war/god-img-p-g.gif",
     "srcVideo": "trailer-jogos/god-trailer.mp4",
     "srcName": "img/img-jogos/god-of-war/god-nome.png",
+    "srcImg1": "img/img-jogos/god-of-war/god-img-1.png",
+    "srcImg2": "img/img-jogos/god-of-war/god-img-2.png",
+    "srcImgp": "img/img-jogos/god-of-war/god-img-p.png",
+    "srcImg3": "img/img-jogos/god-of-war/god-img-3.png",
+    "srcImg4": "img/img-jogos/god-of-war/god-img-4.png",
+    "srcImg5": "img/img-jogos/god-of-war/god-img-5.png",
     "percentage": 25,
     "company": "PlayStation",
-    "date": "14/01/22"
+    "date": "14/01/22",
+    "characteristics": "RPG"
   },
   {
     "id": 6,
@@ -120,9 +161,16 @@
     "srcGif": "img/img-jogos/kena/kena-img-p-g.gif",
     "srcVideo": "trailer-jogos/kena-trailer.mp4",
     "srcName": "img/img-jogos/kena/kena-nome.png",
+    "srcImg1": "img/img-jogos/kena/kena-img-1.png",
+    "srcImg2": "img/img-jogos/kena/kena-img-2.png",
+    "srcImgp": "img/img-jogos/kena/kena-img-p.png",
+    "srcImg3": "img/img-jogos/kena/kena-img-3.png",
+    "srcImg4": "img/img-jogos/kena/kena-img-4.png",
+    "srcImg5": "img/img-jogos/kena/kena-img-5.png",
     "percentage": 35,
     "company": "Ember Lab",
-    "date": "27/09/22"
+    "date": "27/09/22",
+    "characteristics": "Aventura"
   },
   {
     "id": 7,
@@ -138,9 +186,16 @@
     "srcGif": "img/img-jogos/gta/gta-img-p-g.gif",
     "srcVideo": "trailer-jogos/gta-trailer.mp4",
     "srcName": "img/img-jogos/gta/gta-nome.png",
+    "srcImg1": "img/img-jogos/gta/gta-img-1.png",
+    "srcImg2": "img/img-jogos/gta/gta-img-2.png",
+    "srcImgp": "img/img-jogos/gta/gta-img-p.png",
+    "srcImg3": "img/img-jogos/gta/gta-img-3.png",
+    "srcImg4": "img/img-jogos/gta/gta-img-4.png",
+    "srcImg5": "img/img-jogos/gta/gta-img-5.png",
     "percentage": 50,
     "company": "Rockstar Games",
-    "date": "14/05/20"
+    "date": "14/05/20",
+    "characteristics": "Aventura"
   },
   {
     "id": 8,
@@ -157,9 +212,16 @@
     "srcGif": "img/img-jogos/sifu/sifu-img-p-g.gif",
     "srcVideo": "trailer-jogos/sifu-trailer.mp4",
     "srcName": "img/img-jogos/sifu/sifu-nome.png",
+    "srcImg1": "img/img-jogos/sifu/sifu-img-1.png",
+    "srcImg2": "img/img-jogos/sifu/sifu-img-2.png",
+    "srcImgp": "img/img-jogos/sifu/sifu-img-p.png",
+    "srcImg3": "img/img-jogos/sifu/sifu-img-3.png",
+    "srcImg4": "img/img-jogos/sifu/sifu-img-4.png",
+    "srcImg5": "img/img-jogos/sifu/sifu-img-5.png",
     "percentage": 10,
     "company": "Slocla",
-    "date": "08/02/22"
+    "date": "08/02/22",
+    "characteristics": "Luta"
   },
   {
     "id": 9,
@@ -175,8 +237,15 @@
     "srcGif": "img/img-jogos/farcry/far-img-p-g.gif",
     "srcVideo": "trailer-jogos/farcry-trailer.mp4",
     "srcName": "img/img-jogos/farcry/far-nome.png",
+    "srcImg1": "img/img-jogos/farcry/far-img-1.png",
+    "srcImg2": "img/img-jogos/farcry/far-img-2.png",
+    "srcImgp": "img/img-jogos/farcry/far-img-p.png",
+    "srcImg3": "img/img-jogos/farcry/far-img-3.png",
+    "srcImg4": "img/img-jogos/farcry/far-img-4.png",
+    "srcImg5": "img/img-jogos/farcry/far-img-5.png",
     "percentage": 50,
     "company": "Ubisoft",
-    "date": "18/11/14"
+    "date": "18/11/14",
+    "characteristics": "Tiro"
   }
 ]

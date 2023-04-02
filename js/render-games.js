@@ -2,12 +2,15 @@ export default function renderGamer() {}
 
 const creatHome = (games) => {
   const home = document.querySelector(".jogo");
-  console.log(window.location.href);
+  const homeH1 = document.querySelector(".jogo-h1 h1");
+  const body = document.querySelector("body");
   const gameId = +window.location.href.split("=")[1];
 
   const game = games.find((item) => item.id === gameId);
 
   if (game) {
+    body.className = game.class;
+    homeH1.innerHTML = /*html*/ game.title;
     home.innerHTML = /*html*/ `
 			<div>
 							<video
@@ -37,7 +40,7 @@ const creatHome = (games) => {
 							<div>
 								<img
 									class="nome-jogo"
-									src="../${game.srcName}"
+									src="../${game.srcGif}"
 									width="1056"
 									height="594"
 									alt="jogo ${game.title}"
@@ -47,9 +50,9 @@ const creatHome = (games) => {
 							<div class="jogo-info-detalhe">
 								<span class="jogo-span-intro">Jogo Base</span>
 								<div class="detalhe-span flex">
-									<span>${game.title}</span>
-									<span class="preco-antigo">${game.title}</span>
-									<span>${game.title}</span>
+									<span>-${game.percentage}%</span>
+									<span class="preco-antigo">₹${game.oldPrice}</span>
+									<span>₹${game.newPrice}</span>
 								</div>
 		
 								<div class="detalhe-btn">
@@ -69,18 +72,18 @@ const creatHome = (games) => {
 								<div>
 									<div class="detalhe-extra flex">
 										<p>Empresa</p>
-										<p>${game.title}</p>
+										<p>${game.company}</p>
 									</div>
 									<div class="detalhe-extra flex">
 										<p>Desenvolvedor</p>
-										<p>${game.title}</p>
+										<p>${game.company}</p>
 									</div>
 									<div class="detalhe-extra flex">
 										<p>Data de lançamento</p>
-										<p>${game.title}</p>
+										<p>${game.date}</p>
 									</div>
 									<div class="detalhe-extra flex">
-										<p>${game.title}</p>
+										<p>Plataforma</p>
 										<img
 											src="../img/produtos/logo-w.svg"
 											width="24"

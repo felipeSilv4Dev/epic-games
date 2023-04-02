@@ -97,7 +97,7 @@
     "oldPrice": 1200,
     "newPrice": 900,
     "order": 25,
-    "point": 5.0,
+    "point": "5.0",
     "src": "img/produtos/produtos-6.png",
     "srcGif": "img/img-jogos/god-of-war/god-img-p-g.gif",
     "srcVideo": "trailer-jogos/god-trailer.mp4",

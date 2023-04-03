@@ -26,7 +26,8 @@
   --type-10: #f23c53;
   --type-11: #a72a3a;
 }
-.cyber {
+.cyber,
+.bomber {
   --type-10: #a8a403;
   --type-11: #7c7902;
 }

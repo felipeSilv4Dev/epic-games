@@ -320,5 +320,29 @@
     "company": "PlayStation",
     "date": "19/10/22",
     "characteristics": "Aventura"
+  },
+  {
+    "id": 13,
+    "free": 1,
+    "class": "bomber",
+    "title": "Borderlands 3",
+    "oldPrice": 5.044,
+    "newPrice": 2.522,
+    "point": 4.2,
+    "srcFree": "img/free-games/free-5.png",
+    "srcFree2": "img/free-games/free-6.png",
+    "srcGif": "img/img-jogos/bomberlands/bomber-img-p-g.gif",
+    "srcVideo": "trailer-jogos/bomber-trailer.mp4",
+    "srcName": "img/img-jogos/bomberlands/bomber-nome.png",
+    "srcImg1": "img/img-jogos/bomberlands/bomber-img-1.png",
+    "srcImg2": "img/img-jogos/bomberlands/bomber-img-2.png",
+    "srcImgp": "img/img-jogos/bomberlands/bomber-img-p.png",
+    "srcImg3": "img/img-jogos/bomberlands/bomber-img-3.png",
+    "srcImg4": "img/img-jogos/bomberlands/bomber-img-4.png",
+    "srcImg5": "img/img-jogos/bomberlands/bomber-img-5.png",
+    "percentage": 50,
+    "company": " Gearbox",
+    "date": "13/09/19",
+    "characteristics": "Tiro"
   }
 ]

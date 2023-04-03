@@ -2,6 +2,8 @@ export default function gamesId() {}
 
 const gamesEl = document.querySelectorAll(".produtos-games");
 const ItensEl = document.querySelectorAll(".itens");
+const freeImgEl = document.querySelector(".free-img");
+
 async function fetchGamesApi() {
   const response = await fetch("./gamesapi.json");
   const gamesData = await response.json();
@@ -125,5 +127,47 @@ async function fetchGamesApi() {
     });
   }
   renderItens();
+
+  function renderImgFree() {
+    freeImgEl.innerHTML = gamesData
+      .filter((item) => !!item.free)
+      .map((game) => {
+        return (game = /*html */ `
+				<div class="img-conteudo">
+				<div>
+					<img
+						src="./${game.srcFree}"
+						width="450"
+						height="253"
+						alt="imagem do jogo ${game.title}"
+					/>
+				</div>
+				<a class="free-btn-1" href="./jogos/games.html?id=${game.id}">Saiba Mais</a>
+
+				<div class="img-info">
+					<h3>${game.title}</h3>
+					<p>23:00 deadline</p>
+				</div>
+			</div>
+
+			<div class="img-conteudo">
+				<div>
+					<img
+						src="./${game.srcFree2}"
+						width="450"
+						height="253"
+						alt="imagem do jogo boderlands"
+					/>
+				</div>
+				<a class="free-btn" href="./jogos/games.html?id=${game.id}">Saiba Mais</a>
+				<div class="img-info">
+					<h3 class="img-info-h3">Unlock at 9:30 Am</h3>
+				</div>
+			</div>
+				
+				`);
+      });
+  }
+  renderImgFree();
 }
 fetchGamesApi();

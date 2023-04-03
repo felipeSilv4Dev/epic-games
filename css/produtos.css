@@ -178,6 +178,67 @@
 a.free-btn {
   background-color: var(--type-5);
 }
+.free-btn-1,
+a.free-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+a.free-btn::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--bg-3);
+  transition: 0.8s;
+}
+a.free-btn::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--bg-3);
+}
+.free-btn-1::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  z-index: -1;
+  background-color: var(--bg-7);
+  transition: 0.8s;
+}
+.free-btn-1::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 50%;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  background-color: var(--bg-7);
+}
+.free-btn-1:hover::before,
+a.free-btn:hover::before {
+  transition: 0.8s;
+  height: 100%;
+}
+.free-btn-1:hover::after,
+a.free-btn:hover::after {
+  height: 100%;
+  transition: 0.8s;
+}
+
 .img-info {
   position: relative;
   top: -0.7rem;

@@ -3,6 +3,7 @@ export default function gamesId() {}
 const gamesEl = document.querySelectorAll(".produtos-games");
 const ItensEl = document.querySelectorAll(".itens");
 const freeImgEl = document.querySelector(".free-img");
+const produtosItemEl = document.querySelector(".produtos-item-2");
 
 async function fetchGamesApi() {
   const response = await fetch("./gamesapi.json");
@@ -169,5 +170,44 @@ async function fetchGamesApi() {
       });
   }
   renderImgFree();
+
+  function renderProdutosItem2() {
+    produtosItemEl.innerHTML = gamesData
+      .filter((item) => !!item.produtosItem)
+      .map((game) => {
+        return (game =
+          /*html*/
+          `<div class="item-2">
+	 <div>
+		 <a href="./jogos/games.html?id=${game.id}">
+			 <img
+				 src="./${game.srcProdutos}"
+				 width="704"
+				 height="396"
+				 alt="imagem do jogo ${game.title}"
+			 />
+		 </a>
+	 </div>
+	 <h2>${game.title}</h2>
+	 <p>${game.description}</p>
+ </div>
+ <div class="item-2">
+	 <div>
+		 <a href="./jogos/games.html?id=${game.id}">
+			 <img
+				 src="./${game.srcProdutos2}"
+				 width="704"
+				 height="396"
+				 alt="imagem do jogo fortnite"
+			 />
+		 </a>
+	 </div>
+	 <h2>${game.title}</h2>
+	 <p>${game.description}</p>
+ </div>`);
+      });
+  }
+
+  renderProdutosItem2();
 }
 fetchGamesApi();

@@ -7,6 +7,8 @@
 .menu-logo,
 .menu-list {
   gap: 0.75rem;
+  position: relative;
+  left: -0.5rem;
 }
 .menu a {
   padding: 0.75rem;
@@ -35,7 +37,10 @@
 
 .menu-sign {
   gap: 0.375rem;
+  position: relative;
+  right: -1.5rem;
 }
+
 .a-sign {
   gap: 0.5rem;
 }

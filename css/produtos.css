@@ -284,7 +284,11 @@ a.free-btn:hover::after {
 /* section free 2 */
 
 .free-img-2 {
-  gap: 2.6rem;
+  gap: 0.8rem;
+  height: auto;
+}
+.img-conteudo-2 {
+  width: 100vh;
 }
 .img-conteudo-2 img {
   height: auto;

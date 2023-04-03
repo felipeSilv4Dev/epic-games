@@ -4,6 +4,7 @@ const gamesEl = document.querySelectorAll(".produtos-games");
 const ItensEl = document.querySelectorAll(".itens");
 const freeImgEl = document.querySelector(".free-img");
 const produtosItemEl = document.querySelector(".produtos-item-2");
+const freeImg2El = document.querySelector(".free-img-2");
 
 async function fetchGamesApi() {
   const response = await fetch("./gamesapi.json");
@@ -111,7 +112,7 @@ async function fetchGamesApi() {
 				 <div class="itens-conteudo">
 				 <a href="./jogos/games.html?id=${game.id}">
 						<img
-							src="./${game.src}"
+							src="./${game.srcFree}"
 							width="353"
 							height="198"
 							alt="imagem do jogo need for speed"
@@ -209,5 +210,31 @@ async function fetchGamesApi() {
   }
 
   renderProdutosItem2();
+
+  function renderFree() {
+    freeImg2El.innerHTML = gamesData
+      .filter((item) => !!item.forFree)
+      .map((game) => {
+        return (game = /*html*/ `
+				<div class="img-conteudo-2">
+				<div>
+				<a href="./jogos/games.html?id=${game.id}">
+              <img
+                src="./${game.src}"
+                width="220"
+                height="315"
+                alt="imagem do jogo ${game.title}"
+              />
+							</a>
+							</div>
+							<div class="img-info-2">
+              <h3>${game.title}</h3>
+              <p>Free ${game.date}</p>
+							</div>
+							</div>
+					`);
+      });
+  }
+  renderFree();
 }
 fetchGamesApi();

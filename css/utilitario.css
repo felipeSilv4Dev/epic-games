@@ -48,6 +48,11 @@
   --type-10: #f72f0d;
   --type-11: #971600;
 }
+.nfs,
+.fifa {
+  --type-10: #00bf00;
+  --type-11: #008600;
+}
 .container {
   max-width: 1300px;
   margin: 0 auto;

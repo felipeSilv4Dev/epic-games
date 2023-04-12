@@ -16,7 +16,7 @@ async function fetchGamesApi() {
         element.innerHTML = gamesData
           .filter((item) => !!item.discount)
           .map((game) => {
-            return (game = ` <div class="games">
+            return ` <div class="games">
 	
 					<a href="./jogos/games.html?id=${game.id}">
 	
@@ -38,7 +38,7 @@ async function fetchGamesApi() {
 	
 					</div>
 	
-					</div> `);
+					</div> `
           });
       }
     });

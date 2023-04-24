@@ -30,9 +30,9 @@
 /* games  */
 
 .produtos-games {
-  flex: 1;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
+
 .games img {
   height: auto;
 }
@@ -43,7 +43,7 @@
 .games h2 {
   margin: 0.5rem 0;
   text-transform: initial;
-  font-size: 0.875rem;
+  font-size: 0.78rem;
 }
 .games-preco {
   gap: 0.5rem;

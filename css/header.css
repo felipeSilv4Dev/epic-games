@@ -87,3 +87,74 @@ a.btn:hover::after {
   padding: 0;
   height: 1.2rem;
 }
+
+/* reponsivo projeto */
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 2rem;
+    max-width: 1200px;
+  }
+  .container-e-pad {
+    max-width: 1200px;
+    padding: 0rem 7rem;
+  }
+  .menu-list {
+    left: 0rem;
+  }
+  .menu-logo {
+    left: -3rem;
+  }
+  .menu-sign {
+    right: -4.4rem;
+  }
+
+  .list .list-intro h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-sign {
+    right: -2rem;
+  }
+  .home .conteudo-info {
+    top: 5rem;
+  }
+  .produtos-games {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .games {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 912px) {
+  .container-e-pad {
+    padding: 0rem 2rem;
+  }
+  .menu-logo {
+    left: 0rem;
+  }
+  .menu-sign {
+    right: 0rem;
+  }
+  .home .conteudo-info {
+    top: 9rem;
+  }
+  .home .home-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .produtos-games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list {
+    margin-top: 2rem;
+  }
+  .list:last-child {
+    grid-column: 1/-1;
+  }
+}

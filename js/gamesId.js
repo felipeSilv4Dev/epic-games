@@ -13,33 +13,49 @@ async function fetchGamesApi() {
   function renderDicount() {
     gamesEl.forEach((element) => {
       if (element.classList.contains("discount")) {
+        console
+          .log
+          // gamesData
+          //   .filter((item) => !!item.discount)
+          //   .map((game) => {
+          //     return /*html */ ` <div class="games">
+          //   	<a href="./jogos/games.html?id=${game.id}">
+          //   	<img
+          //   	src="${game.src}"
+          //   	width="213"
+          //   	height="284"
+          //   	alt="${game.title}"
+          //   	/>
+          //   	</a>
+          //   	<h2>${game.title}</h2>
+          //   	<div class="games-preco flex">
+          //    <span>-${game.discount}%</span> <span class="preco-antigo">₹${game.oldPrice}</span>
+          //    <span>₹${game.newPrice}</span>
+          //    </div>
+          //   </div> `;
+          //   })
+          //   .join()
+          ();
         element.innerHTML = gamesData
           .filter((item) => !!item.discount)
           .map((game) => {
-            return ` <div class="games">
-	
-					<a href="./jogos/games.html?id=${game.id}">
-	
-					 <img
-						 src="${game.src}"
-						 width="213"
-						 height="284"
-						 alt="${game.title}"
-					 />
-	
-					</a>
-	
-					<h2>${game.title}</h2>
-					
-					<div class="games-preco flex">
-	
-					 <span>-${game.discount}%</span> <span class="preco-antigo">₹${game.oldPrice}</span>
-					 <span>₹${game.newPrice}</span>
-	
-					</div>
-	
-					</div> `
-          });
+            return /*html */ ` <div class="games">
+            	<a href="./jogos/games.html?id=${game.id}">
+            	<img
+            	src="${game.src}"
+            	width="213"
+            	height="284"
+            	alt="${game.title}"
+            	/>
+            	</a>
+            	<h2>${game.title}</h2>
+            	<div class="games-preco flex">
+             <span>-${game.discount}%</span> <span class="preco-antigo">₹${game.oldPrice}</span>
+             <span>₹${game.newPrice}</span>
+             </div>
+            </div> `;
+          })
+          .join("");
       }
     });
   }
@@ -52,7 +68,7 @@ async function fetchGamesApi() {
         element.innerHTML = gamesData
           .filter((item) => !!item.popular)
           .map((game) => {
-            return (game = ` 
+            return /*html */ ` 
 						<div class="games">
 					<a href="./jogos/games.html?id=${game.id}">
 					 <img
@@ -67,8 +83,9 @@ async function fetchGamesApi() {
 					 <span>-${game.percent}%</span> <span class="preco-antigo">₹${game.oldPrice}</span>
 					 <span>₹${game.newPrice}</span>
 					</div>
-					</div> `);
-          });
+					</div> `;
+          })
+          .join("");
       }
     });
   }
@@ -80,7 +97,7 @@ async function fetchGamesApi() {
         element.innerHTML = gamesData
           .filter((item) => !!item.order)
           .map((game) => {
-            return (game = ` 
+            return /*html */ ` 
 						<div class="games">
 						<a href="./jogos/games.html?id=${game.id}">
 						<img
@@ -95,8 +112,9 @@ async function fetchGamesApi() {
 						<span>-${game.order}%</span> <span class="preco-antigo">₹${game.oldPrice}</span>
 						<span>₹${game.newPrice}</span>
 						</div>
-						</div> `).replace(",", "");
-          });
+						</div> `;
+          })
+          .join("");
       }
     });
   }
@@ -107,7 +125,7 @@ async function fetchGamesApi() {
       item.innerHTML = gamesData
         .filter((item) => !!item.item)
         .map((game) => {
-          return (game = /*html */ `
+          return /*html */ `
 
 				 <div class="itens-conteudo">
 				 <a href="./jogos/games.html?id=${game.id}">
@@ -124,8 +142,9 @@ async function fetchGamesApi() {
 					</p>
 					<span>₹${game.newPrice}</span>
 				</div>
-				`);
-        });
+				`;
+        })
+        .join("");
     });
   }
   renderItens();
@@ -134,7 +153,7 @@ async function fetchGamesApi() {
     freeImgEl.innerHTML = gamesData
       .filter((item) => !!item.free)
       .map((game) => {
-        return (game = /*html */ `
+        return /*html */ `
 				<div class="img-conteudo">
 				<div>
 					<img
@@ -167,8 +186,9 @@ async function fetchGamesApi() {
 				</div>
 			</div>
 				
-				`);
-      });
+				`;
+      })
+      .join("");
   }
   renderImgFree();
 
@@ -176,8 +196,8 @@ async function fetchGamesApi() {
     produtosItemEl.innerHTML = gamesData
       .filter((item) => !!item.produtosItem)
       .map((game) => {
-        return (game =
-          /*html*/
+        return (
+          /*html */
           `<div class="item-2">
 	 <div>
 		 <a href="./jogos/games.html?id=${game.id}">
@@ -205,8 +225,10 @@ async function fetchGamesApi() {
 	 </div>
 	 <h2>${game.title}</h2>
 	 <p>${game.description}</p>
- </div>`);
-      });
+ </div>`
+        );
+      })
+      .join("");
   }
 
   renderProdutosItem2();
@@ -215,7 +237,7 @@ async function fetchGamesApi() {
     freeImg2El.innerHTML = gamesData
       .filter((item) => !!item.forFree)
       .map((game) => {
-        return (game = /*html*/ `
+        return /*html*/ `
 				<div class="img-conteudo-2">
 				<div>
 				<a href="./jogos/games.html?id=${game.id}">
@@ -232,8 +254,9 @@ async function fetchGamesApi() {
               <p>Free ${game.date}</p>
 							</div>
 							</div>
-					`);
-      });
+					`;
+      })
+      .join("");
   }
   renderFree();
 }

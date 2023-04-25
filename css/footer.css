@@ -25,7 +25,13 @@
   justify-content: space-between;
 }
 .intro-img-footer {
-  gap: 8px;
+  gap: 1rem;
+}
+.intro-img-footer img {
+  transition: 0.4s;
+}
+.intro-img-footer img:hover {
+  transform: translateY(-7px);
 }
 .intro-seta-footer img {
   height: auto;

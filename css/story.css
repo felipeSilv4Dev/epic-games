@@ -181,18 +181,10 @@
   width: auto;
   align-self: center;
   padding: 7px 17px;
-  transition: 0.6s;
+  transition: 0.3s;
 }
 .edicoes-redes-img img:hover {
-  animation: alternate edicoes-redes 0.6s infinite;
-}
-@keyframes edicoes-redes {
-  from {
-    transform: translate3d(0, -5px, 0);
-  }
-  to {
-    transform: translate3d(0, 5px, 0);
-  }
+  transform: translateY(-7px);
 }
 
 /* classsifição */

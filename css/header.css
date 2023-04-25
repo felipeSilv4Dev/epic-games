@@ -4,8 +4,7 @@
 .menu {
   justify-content: space-between;
 }
-.menu-logo,
-.menu-list {
+.menu-logo {
   gap: 0.75rem;
   position: relative;
   left: -0.5rem;
@@ -134,10 +133,10 @@ a.btn:hover::after {
     padding: 0rem 2rem;
   }
   .menu-logo {
-    left: 0rem;
+    left: -1rem;
   }
   .menu-sign {
-    right: 0rem;
+    right: -2rem;
   }
   .home .conteudo-info {
     top: 9rem;
@@ -146,15 +145,7 @@ a.btn:hover::after {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .produtos-games {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .list {
-    margin-top: 2rem;
-  }
-  .list:last-child {
-    grid-column: 1/-1;
+  .free-img-2 {
+    place-items: start;
   }
 }

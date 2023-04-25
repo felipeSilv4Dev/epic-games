@@ -13,29 +13,6 @@ async function fetchGamesApi() {
   function renderDicount() {
     gamesEl.forEach((element) => {
       if (element.classList.contains("discount")) {
-        console
-          .log
-          // gamesData
-          //   .filter((item) => !!item.discount)
-          //   .map((game) => {
-          //     return /*html */ ` <div class="games">
-          //   	<a href="./jogos/games.html?id=${game.id}">
-          //   	<img
-          //   	src="${game.src}"
-          //   	width="213"
-          //   	height="284"
-          //   	alt="${game.title}"
-          //   	/>
-          //   	</a>
-          //   	<h2>${game.title}</h2>
-          //   	<div class="games-preco flex">
-          //    <span>-${game.discount}%</span> <span class="preco-antigo">₹${game.oldPrice}</span>
-          //    <span>₹${game.newPrice}</span>
-          //    </div>
-          //   </div> `;
-          //   })
-          //   .join()
-          ();
         element.innerHTML = gamesData
           .filter((item) => !!item.discount)
           .map((game) => {
@@ -167,7 +144,7 @@ async function fetchGamesApi() {
 
 				<div class="img-info">
 					<h3>${game.title}</h3>
-					<p>23:00 deadline</p>
+					<p>23:00 prazo final</p>
 				</div>
 			</div>
 
@@ -182,7 +159,7 @@ async function fetchGamesApi() {
 				</div>
 				<a class="free-btn" href="./jogos/games.html?id=${game.id}">Saiba Mais</a>
 				<div class="img-info">
-					<h3 class="img-info-h3">Unlock at 9:30 Am</h3>
+					<h3 class="img-info-h3">Desbloquea em 9:30 Am</h3>
 				</div>
 			</div>
 				
@@ -251,7 +228,7 @@ async function fetchGamesApi() {
 							</div>
 							<div class="img-info-2">
               <h3>${game.title}</h3>
-              <p>Free ${game.date}</p>
+              <p>Grátis ${game.date}</p>
 							</div>
 							</div>
 					`;

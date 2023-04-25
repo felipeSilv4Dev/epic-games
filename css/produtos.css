@@ -59,17 +59,20 @@
 /* itens */
 
 .itens {
-  gap: 0.625rem;
+  gap: 0.875rem;
   margin-bottom: 5rem;
+  place-items: center;
 }
 .itens-conteudo {
   padding-bottom: 1rem;
+  flex: 3;
 }
 .itens-conteudo h2 {
   font-size: 1rem;
 }
 .itens-conteudo img {
   height: auto;
+  margin-bottom: 1rem;
 }
 .itens-conteudo img:hover {
   opacity: 0.6;
@@ -77,15 +80,14 @@
 }
 .itens-conteudo p {
   margin-top: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--type-7);
   line-height: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .itens .itens-conteudo span {
   font-size: 0.9rem;
-  position: relative;
-  bottom: -0.5rem;
 }
 
 /* free games */

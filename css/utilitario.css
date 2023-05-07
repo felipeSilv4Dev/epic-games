@@ -55,11 +55,11 @@
   --type-11: #008600;
 }
 .container {
-  max-width: 1300px;
+  max-width: 81.25rem;
   margin: 0 auto;
 }
 .container-e-pad {
-  max-width: 1300px;
+  max-width: 81.25rem;
   margin: 0 auto;
   padding: 0rem 8rem;
 }

@@ -13,6 +13,9 @@ li {
 a {
   text-decoration: none;
 }
+html {
+  font-size: 100%;
+}
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;

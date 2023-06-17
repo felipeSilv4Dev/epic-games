@@ -89,20 +89,3 @@
 .rodape p {
   font-size: 0.75rem;
 }
-
-@media (max-width: 414px) {
-  .intro-img-footer img {
-    height: 1.7rem;
-    width: auto;
-  }
-  .footer-p {
-    display: initial;
-    text-align: center;
-    max-width: initial;
-    margin-bottom: 0;
-  }
-  .footer-rodape {
-    margin-top: 2rem;
-    gap: 2rem;
-  }
-}

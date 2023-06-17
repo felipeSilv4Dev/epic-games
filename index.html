@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,502 +21,130 @@
     />
 
     <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/icon-font.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Epic Games</title>
   </head>
   <body>
     <header class="header">
-      <div class="menu container flex">
-        <div class="menu-logo flex">
-          <a class="logo" href="#logo">
-            <img src="./img/menu/logo.svg" width="24" height="29" alt="Logo" />
-          </a>
+      <div class="header__menu container flex">
+        <div class="header__menu--logo flex">
+          <img src="./img/menu/logo.svg" width="24" height="29" alt="Logo" />
 
           <nav>
-            <ul class="menu-list flex">
+            <ul class="header__menu--nav flex">
               <li><a href="#estore">STORE</a></li>
-              <li><a href="#faq">Distribuição</a></li>
-              <li><a href="#help">Ajuda</a></li>
+              <li><a href="#faq">faq</a></li>
+              <li><a href="#help">Help</a></li>
               <li><a href="#unreal">UNREAL ENGINE</a></li>
             </ul>
           </nav>
         </div>
-        <div class="menu-sign flex">
-          <img src="./img/menu/globo.svg" width="20" height="20" alt="globo" />
-          <a class="a-sign flex" href="#sign"
-            ><img src="./img/menu/sign.svg" width="24" height="24" alt="sign" />
-            Entrar</a
+
+        <div class="header__menu--login flex">
+          <i class="icon-basic-world header__menu--login-icon"></i>
+
+          <a class="header__menu--login-sign flex" href="#sign"
+            ><i class="fa-solid fa-user-plus"></i>sign in</a
           >
-          <a class="btn" href="#download">Baixar Agora</a>
+          <a class="btn" href="#download">Download</a>
         </div>
       </div>
     </header>
 
-    <section class="home container-e-pad">
-      <div class="home-menu flex">
-        <div class="input flex">
-          <img src="./img/home/lupa.svg" width="20" height="20" alt="lupa" />
-          <input type="text" name="search" placeholder="Pesquisa loja" />
-        </div>
-        <a href="#discover">Descobrir </a>
-        <a href="#browser">Navegar</a>
-        <a href="#news">Novidades</a>
-      </div>
-
-      <div class="home-conteudo flex">
-        <div class="conteudo">
-          <div>
-            <img
-              src="./img/home/home-principal-1.jpg"
-              width="827"
-              height="432"
-              alt="imagem de um jogo"
-            />
+    <main class="main">
+      <section class="home container-e-pad">
+        <div class="home-menu flex">
+          <div class="input flex">
+            <img src="./img/home/lupa.svg" width="20" height="20" alt="lupa" />
+            <input type="text" name="search" placeholder="Pesquisa loja" />
           </div>
-          <div class="conteudo-info">
-            <p>PRÉ-COMPRA DISPONÍVEL</p>
-            <p>
-              Kratos agora vive como um homem no reino dos deuses e monstros
-              nórdicos. É neste mundo cruel e implacável que ele deve lutar para
-              sobrevive
-            </p>
-            <a class="conteudo-btn" href="#pre">Compre Já na Pré-Venda</a>
-          </div>
+          <a href="#discover">Descobrir </a>
+          <a href="#browser">Navegar</a>
+          <a href="#news">Novidades</a>
         </div>
 
-        <div class="conteudo-lateral">
-          <div class="lateral-game flex">
-            <img
-              src="./img/home/home-list-1.png"
-              width="60"
-              height="80"
-              alt="imagem de um jogo"
-            />
-            <h3>God Of War 4</h3>
-          </div>
-          <div class="lateral-game flex">
-            <img
-              src="./img/home/home-list-2.png"
-              width="60"
-              height="80"
-              alt="imagem de um jogo"
-            />
-            <h3>Farcry 6 Golden Edition</h3>
-          </div>
-          <div class="lateral-game flex">
-            <img
-              src="./img/home/home-list-3.png"
-              width="60"
-              height="80"
-              alt="imagem de um jogo"
-            />
-            <h3>GTA V</h3>
-          </div>
-          <div class="lateral-game flex">
-            <img
-              src="./img/home/home-list-4.png"
-              width="60"
-              height="80"
-              alt="imagem de um jogo"
-            />
-            <h3>UNCHARTED 4</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="produtos container-e-pad">
-      <div class="produtos-intro flex">
-        <div class="intro-titulo flex">
-          <h2>jogos à venda</h2>
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-        </div>
-
-        <div class="intro-img flex">
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-        </div>
-      </div>
-
-      <div class="produtos-games flex discount"></div>
-    </section>
-
-    <section class="itens container-e-pad flex"></section>
-
-    <section class="container-e-pad">
-      <div class="free">
-        <div class="free-intro flex">
-          <div class="free-titulo flex">
-            <img
-              src="./img/free-games/presente.svg"
-              width="46"
-              height="46"
-              alt="presente"
-            />
-            <h2></h2>
-          </div>
-          <div>
-            <a href="#see">ver Mais</a>
-          </div>
-        </div>
-
-        <div class="free-img"></div>
-      </div>
-    </section>
-
-    <section class="produtos container-e-pad">
-      <div class="produtos-intro flex">
-        <div class="intro-titulo flex">
-          <h2>JOGO À VENDA</h2>
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-        </div>
-
-        <div class="intro-img flex">
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-        </div>
-      </div>
-
-      <div class="produtos-games flex popular"></div>
-    </section>
-
-    <section class="produtos-item-2 flex container-e-pad"></section>
-
-    <section class="container-e-pad">
-      <div class="free">
-        <div class="free-intro flex">
-          <div class="free-titulo flex">
-            <img
-              src="./img/free-games/presente.svg"
-              width="46"
-              height="46"
-              alt="presente"
-            />
-            <h2>JOGOS GRÁTIS</h2>
-          </div>
-          <div>
-            <a href="#see">Ver Mais</a>
-          </div>
-        </div>
-
-        <div class="free-img-2 flex"></div>
-      </div>
-    </section>
-
-    <section class="list-game container-e-pad">
-      <div class="list">
-        <div class="list-intro flex">
-          <h2>MAIS VENDIDOS</h2>
-          <a href="#view">Ver Mais</a>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-1.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Ghostbusters: Spirits U.</h2>
-            <span>₹939</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-2.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>GTA V : Premier edition</h2>
-            <span>₹2,499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-3.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Daysgone</h2>
-            <span>₹2,699</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-4.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Last of Us</h2>
-            <span>₹1,499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-5.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>God of War 4</h2>
-            <span>₹2,659</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="list-intro flex">
-          <h2>Best Seller</h2>
-          <a href="#view">Ver Mais</a>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-6.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Fortnite</h2>
-            <span>Free</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-7.png"
-              width="60"
-              height="80"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Cyberpunk</h2>
-            <span>₹2,499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-8.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>IGI 2</h2>
-            <span>₹499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-9.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Tomb Raider</h2>
-            <span>₹2,499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-10.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Uncharted 4</h2>
-            <span>₹3,499</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="list-intro flex">
-          <h2>MELHORES JOGOS</h2>
-          <a href="#view">Ver Mais</a>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-11.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Hogwarts Legacy</h2>
-            <span>₹2,999</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-12.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Uncharted Legacy of Thieves</h2>
-            <span>₹4,499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-13.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Assassin's Creed Mirage</h2>
-            <span>₹3,499</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-14.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Last of Us II</h2>
-            <span>₹3,999</span>
-          </div>
-        </div>
-
-        <div class="list-img-game flex">
-          <div>
-            <img
-              src="./img/list-game/list-img-15.png"
-              width="60"
-              height="81"
-              alt="imgem de jogo"
-            />
-          </div>
-          <div>
-            <h2>Dead by Daylight</h2>
-            <span>coming soon</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="itens container-e-pad flex"></section>
-
-    <section class="produtos container-e-pad">
-      <div class="produtos-intro flex">
-        <div class="intro-titulo flex">
-          <h2>jogos à venda</h2>
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-        </div>
-
-        <div class="intro-img flex">
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-          <img src="./img/produtos/seta.svg" width="7" height="12" alt="seta" />
-        </div>
-      </div>
-
-      <div class="produtos-games flex order"></div>
-    </section>
-
-    <section class="explore container-e-pad flex">
-      <div>
-        <img
-          src="./img/explore/explore-img.png"
-          width="630"
-          height="354"
-          alt=" imagem de jogos"
-        />
-      </div>
-      <div class="explore-info">
-        <h2>Explore our Catalog</h2>
-        <p>
-          Browse by genre, features, price, and more to find your next favorite
-          game.
-        </p>
-      </div>
-    </section>
-
-    <footer class="footer-bg">
-      <div class="footer container">
-        <div class="footer-intro flex">
-          <div class="intro-img-footer flex">
-            <a href="#rede">
+        <div class="home-conteudo flex">
+          <div class="conteudo">
+            <div>
               <img
-                src="./img/footer/facebook.svg"
-                width="24"
-                height="24"
-                alt="facebook"
+                src="./img/home/home-principal-1.jpg"
+                width="827"
+                height="432"
+                alt="imagem de um jogo"
               />
-            </a>
-            <a href="#rede">
-              <img
-                src="./img/footer/twiter.svg"
-                width="22"
-                height="18"
-                alt="facebook"
-              />
-            </a>
-            <a href="#rede">
-              <img
-                src="./img/footer/youtube.svg"
-                width="24"
-                height="24"
-                alt="facebook"
-              />
-            </a>
+            </div>
+            <div class="conteudo-info">
+              <p>PRÉ-COMPRA DISPONÍVEL</p>
+              <p>
+                Kratos agora vive como um homem no reino dos deuses e monstros
+                nórdicos. É neste mundo cruel e implacável que ele deve lutar
+                para sobrevive
+              </p>
+              <a class="conteudo-btn" href="#pre">Compre Já na Pré-Venda</a>
+            </div>
           </div>
-          <div class="intro-seta-footer">
+
+          <div class="conteudo-lateral">
+            <div class="lateral-game flex">
+              <img
+                src="./img/home/home-list-1.png"
+                width="60"
+                height="80"
+                alt="imagem de um jogo"
+              />
+              <h3>God Of War 4</h3>
+            </div>
+            <div class="lateral-game flex">
+              <img
+                src="./img/home/home-list-2.png"
+                width="60"
+                height="80"
+                alt="imagem de um jogo"
+              />
+              <h3>Farcry 6 Golden Edition</h3>
+            </div>
+            <div class="lateral-game flex">
+              <img
+                src="./img/home/home-list-3.png"
+                width="60"
+                height="80"
+                alt="imagem de um jogo"
+              />
+              <h3>GTA V</h3>
+            </div>
+            <div class="lateral-game flex">
+              <img
+                src="./img/home/home-list-4.png"
+                width="60"
+                height="80"
+                alt="imagem de um jogo"
+              />
+              <h3>UNCHARTED 4</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="produtos container-e-pad">
+        <div class="produtos-intro flex">
+          <div class="intro-titulo flex">
+            <h2>jogos à venda</h2>
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
+          </div>
+
+          <div class="intro-img flex">
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
             <img
               src="./img/produtos/seta.svg"
               width="7"
@@ -518,68 +154,488 @@
           </div>
         </div>
 
-        <span>Resource</span>
-        <div class="footer-info flex">
-          <div class="footer-info-list">
-            <p>Creator Support</p>
-            <p>Published On Epic</p>
-            <p>Profession</p>
-            <p>Company</p>
-          </div>
+        <div class="produtos-games flex discount"></div>
+      </section>
 
-          <div class="footer-info-list">
-            <p>Fan Work Policy</p>
-            <p>User Exp Service</p>
-            <p>User Liscence</p>
-          </div>
+      <section class="itens container-e-pad flex"></section>
 
-          <div class="footer-info-list">
-            <p>Online Service</p>
-            <p>Community</p>
-            <p>Epic Newsroom</p>
-          </div>
-
-          <div class="footer-info-list">
-            <p>Battle Breakers</p>
-            <p>Fortnite</p>
-            <p>Infinity Blade</p>
-          </div>
-
-          <div class="footer-info-list">
-            <p>Robo Recall</p>
-            <p>Shadow Complex</p>
-            <p>Unreal Tournament</p>
-          </div>
-        </div>
-        <p class="footer-p">
-          © 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, Epic
-          Games logo, Fortnite, Fortnite logo, Unreal, Unreal Engine, Unreal
-          Engine logo, Unreal Tournament ) and the Unreal Tournament logo are
-          trademarks or registered trademarks of Epic Games, Inc. in the United
-          States of America and elsewhere. Other brand or product names are
-          trademarks of their respective owners. Transactions outside the United
-          States are handled through Epic Games International, S.à r.l..
-        </p>
-
-        <div class="footer-rodape flex">
-          <div class="rodape flex">
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
-            <p>Store Refund Policy</p>
-          </div>
-          <div>
-            <a href="#rede">
+      <section class="container-e-pad">
+        <div class="free">
+          <div class="free-intro flex">
+            <div class="free-titulo flex">
               <img
-                src="./img/footer/logo.svg"
-                width="22"
-                height="27"
-                alt="Logo"
+                src="./img/free-games/presente.svg"
+                width="46"
+                height="46"
+                alt="presente"
               />
-            </a>
+              <h2></h2>
+            </div>
+            <div>
+              <a href="#see">ver Mais</a>
+            </div>
+          </div>
+
+          <div class="free-img"></div>
+        </div>
+      </section>
+
+      <section class="produtos container-e-pad">
+        <div class="produtos-intro flex">
+          <div class="intro-titulo flex">
+            <h2>JOGO À VENDA</h2>
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
+          </div>
+
+          <div class="intro-img flex">
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
           </div>
         </div>
-      </div>
-    </footer>
+
+        <div class="produtos-games flex popular"></div>
+      </section>
+
+      <section class="produtos-item-2 flex container-e-pad"></section>
+
+      <section class="container-e-pad">
+        <div class="free">
+          <div class="free-intro flex">
+            <div class="free-titulo flex">
+              <img
+                src="./img/free-games/presente.svg"
+                width="46"
+                height="46"
+                alt="presente"
+              />
+              <h2>JOGOS GRÁTIS</h2>
+            </div>
+            <div>
+              <a href="#see">Ver Mais</a>
+            </div>
+          </div>
+
+          <div class="free-img-2 flex"></div>
+        </div>
+      </section>
+
+      <section class="list-game container-e-pad">
+        <div class="list">
+          <div class="list-intro flex">
+            <h2>MAIS VENDIDOS</h2>
+            <a href="#view">Ver Mais</a>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-1.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Ghostbusters: Spirits U.</h2>
+              <span>₹939</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-2.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>GTA V : Premier edition</h2>
+              <span>₹2,499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-3.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Daysgone</h2>
+              <span>₹2,699</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-4.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Last of Us</h2>
+              <span>₹1,499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-5.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>God of War 4</h2>
+              <span>₹2,659</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="list-intro flex">
+            <h2>Best Seller</h2>
+            <a href="#view">Ver Mais</a>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-6.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Fortnite</h2>
+              <span>Free</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-7.png"
+                width="60"
+                height="80"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Cyberpunk</h2>
+              <span>₹2,499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-8.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>IGI 2</h2>
+              <span>₹499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-9.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Tomb Raider</h2>
+              <span>₹2,499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-10.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Uncharted 4</h2>
+              <span>₹3,499</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="list-intro flex">
+            <h2>MELHORES JOGOS</h2>
+            <a href="#view">Ver Mais</a>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-11.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Hogwarts Legacy</h2>
+              <span>₹2,999</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-12.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Uncharted Legacy of Thieves</h2>
+              <span>₹4,499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-13.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Assassin's Creed Mirage</h2>
+              <span>₹3,499</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-14.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Last of Us II</h2>
+              <span>₹3,999</span>
+            </div>
+          </div>
+
+          <div class="list-img-game flex">
+            <div>
+              <img
+                src="./img/list-game/list-img-15.png"
+                width="60"
+                height="81"
+                alt="imgem de jogo"
+              />
+            </div>
+            <div>
+              <h2>Dead by Daylight</h2>
+              <span>coming soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="itens container-e-pad flex"></section>
+
+      <section class="produtos container-e-pad">
+        <div class="produtos-intro flex">
+          <div class="intro-titulo flex">
+            <h2>jogos à venda</h2>
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
+          </div>
+
+          <div class="intro-img flex">
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
+            <img
+              src="./img/produtos/seta.svg"
+              width="7"
+              height="12"
+              alt="seta"
+            />
+          </div>
+        </div>
+
+        <div class="produtos-games flex order"></div>
+      </section>
+
+      <section class="explore container-e-pad flex">
+        <div>
+          <img
+            src="./img/explore/explore-img.png"
+            width="630"
+            height="354"
+            alt=" imagem de jogos"
+          />
+        </div>
+        <div class="explore-info">
+          <h2>Explore our Catalog</h2>
+          <p>
+            Browse by genre, features, price, and more to find your next
+            favorite game.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer-bg">
+        <div class="footer container">
+          <div class="footer-intro flex">
+            <div class="intro-img-footer flex">
+              <a href="#rede">
+                <img
+                  src="./img/footer/facebook.svg"
+                  width="24"
+                  height="24"
+                  alt="facebook"
+                />
+              </a>
+              <a href="#rede">
+                <img
+                  src="./img/footer/twiter.svg"
+                  width="22"
+                  height="18"
+                  alt="facebook"
+                />
+              </a>
+              <a href="#rede">
+                <img
+                  src="./img/footer/youtube.svg"
+                  width="24"
+                  height="24"
+                  alt="facebook"
+                />
+              </a>
+            </div>
+            <div class="intro-seta-footer">
+              <img
+                src="./img/produtos/seta.svg"
+                width="7"
+                height="12"
+                alt="seta"
+              />
+            </div>
+          </div>
+
+          <span>Resource</span>
+          <div class="footer-info flex">
+            <div class="footer-info-list">
+              <p>Creator Support</p>
+              <p>Published On Epic</p>
+              <p>Profession</p>
+              <p>Company</p>
+            </div>
+
+            <div class="footer-info-list">
+              <p>Fan Work Policy</p>
+              <p>User Exp Service</p>
+              <p>User Liscence</p>
+            </div>
+
+            <div class="footer-info-list">
+              <p>Online Service</p>
+              <p>Community</p>
+              <p>Epic Newsroom</p>
+            </div>
+
+            <div class="footer-info-list">
+              <p>Battle Breakers</p>
+              <p>Fortnite</p>
+              <p>Infinity Blade</p>
+            </div>
+
+            <div class="footer-info-list">
+              <p>Robo Recall</p>
+              <p>Shadow Complex</p>
+              <p>Unreal Tournament</p>
+            </div>
+          </div>
+          <p class="footer-p">
+            © 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, Epic
+            Games logo, Fortnite, Fortnite logo, Unreal, Unreal Engine, Unreal
+            Engine logo, Unreal Tournament ) and the Unreal Tournament logo are
+            trademarks or registered trademarks of Epic Games, Inc. in the
+            United States of America and elsewhere. Other brand or product names
+            are trademarks of their respective owners. Transactions outside the
+            United States are handled through Epic Games International, S.à
+            r.l..
+          </p>
+
+          <div class="footer-rodape flex">
+            <div class="rodape flex">
+              <p>Terms of Service</p>
+              <p>Privacy Policy</p>
+              <p>Store Refund Policy</p>
+            </div>
+            <div>
+              <a href="#rede">
+                <img
+                  src="./img/footer/logo.svg"
+                  width="22"
+                  height="27"
+                  alt="Logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
     <script type="module" src="./js/gamesId.js"></script>
   </body>
 </html>

@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 img {
   max-width: 100%;
 }
@@ -13,20 +16,21 @@ li {
 a {
   text-decoration: none;
 }
-html {
-  font-size: 100%;
-}
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   background: var(--bg-2);
   color: var(--type-1);
+}
+.main {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0rem 18.1rem;
 }
 a,
 h1,
 h2,
 h3,
 h4 {
-  font-weight: initial;
+  color: var(--type-1);
   text-transform: uppercase;
 }

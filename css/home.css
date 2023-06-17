@@ -1,134 +1,104 @@
+/* menu home */
 .home {
-  margin-top: 1.75rem;
+  margin-top: 2.8rem;
 }
-.home-menu {
-  position: relative;
-  left: -1.2rem;
-  margin-bottom: 1.75rem;
-  gap: 2rem;
+.home__menu {
+  gap: 1.4rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
 }
-.home-menu a {
-  color: var(--type-4);
-  font-size: 0.75rem;
+.home__menu a {
+  color: var(--type-8);
 }
-.home-menu a:hover {
+.home__menu a:hover {
   transition: 0.3s;
   color: var(--type-1);
 }
-.input input {
-  padding: 0.625rem 2rem 0.625rem 2.5rem;
-  border-radius: 200px;
-  background: var(--bg-3);
+.home__menu--search {
+  gap: 0.8rem;
+}
+.home__menu--search input {
+  padding: 1rem 10.344rem 1rem 3.6rem;
+  border-radius: 20rem;
+  background-color: var(--bg-3);
   border: none;
-  color: var(--type-1);
 }
-.input input:hover {
-  transition: 0.6s;
+.home__menu--search input:focus {
   background-color: var(--bg-6);
+  color: var(--type-3);
+  outline: 0;
 }
-.input input::placeholder {
-  color: var(--type-4);
+.home__menu--search input::placeholder,
+.home__menu--search .fa-solid {
+  font-size: 1.2rem;
+  color: var(--type-8);
 }
-.input img {
+.home__menu--search .fa-solid {
   position: relative;
-  left: 2rem;
-  top: -0.09rem;
+  right: -3.8rem;
 }
 
-/* home-conteúdo */
-
-.home-conteudo {
-  gap: 1.5rem;
-}
-.conteudo {
-  position: relative;
-  align-self: start;
-}
-.conteudo img {
-  height: auto;
-  border-radius: 8px;
-}
-.conteudo-info {
-  left: 2.4rem;
-  top: 8.2rem;
-  position: absolute;
-}
-.conteudo-info p {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  color: var(--type-1);
-}
-.conteudo-info p + p {
-  max-width: 34ch;
-  color: var(--type-1);
-  font-size: 1rem;
-}
-.conteudo-btn {
-  display: inline-block;
-  margin: 2.5rem 0 2rem;
-  padding: 0.825rem 1rem;
-  background-color: var(--type-1);
-  color: var(--type-5);
-  font-size: 1rem;
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.conteudo-btn::before {
-  content: "";
-  width: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0;
-  z-index: -1;
-  background-color: var(--bg-5);
-  transition: 0.8s;
-}
-.conteudo-btn::after {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 50%;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  transition: 0.8s;
-  background-color: var(--bg-5);
-}
-.conteudo-btn:hover {
-  transition: 0.8s;
-  color: var(--type-1);
-}
-.conteudo-btn:hover::before {
-  transition: 0.8s;
-  height: 100%;
-}
-.conteudo-btn:hover::after {
-  height: 100%;
-  transition: 0.8s;
-}
-.me .conteudo-lateral {
+/* home info */
+.home__content {
   display: grid;
-  align-self: start;
+  grid-template-columns: 65% 35%;
+  gap: 2.432rem;
 }
-.lateral-game {
-  gap: 1rem;
+.home__content--info {
+  position: relative;
 }
-.lateral-game {
-  padding: 0.81rem 1rem;
-  border-radius: 16px;
+.home__content--info img {
+  height: 100%;
+  width: 120vh;
+  border-radius: 2rem;
 }
-.lateral-game:nth-child(1) {
+.home__content--info-text {
+  position: absolute;
+  max-width: 30rem;
+  margin: 3.2rem 3.9rem;
+  bottom: 3.2%;
+}
+.home__content--info-text span {
+  font-size: 1.2rem;
+}
+.home__content--info-text p {
+  margin: 0.8rem 0 4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.home__content--info-text .btn--white {
+  padding: 1.3rem 1.6rem;
+  background-color: var(--type-1);
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  color: var(--type-5);
+  transition: all 0.3s;
+}
+.home__content--info-text .btn--white:hover {
+  background-color: var(--type-9);
+}
+
+/* home games */
+.home__content--games-game img {
+  height: 10vh;
+  width: 8vh;
+}
+
+.home__content--games {
+  display: inline-block;
+  max-width: 35rem;
+}
+.home__content--games-game {
+  padding: 1.3rem 1.6rem;
+  gap: 1.6rem;
+  border-radius: 1.6rem;
+}
+.home__content--games-game:hover {
   background-color: var(--bg-4);
 }
-.lateral-game img {
-  max-width: 3.25rem;
-  height: auto;
-}
-.lateral-game h3 {
-  font-size: 1rem;
-  line-height: 1.3rem;
-  font-style: normal;
+.home__content--games-game h3 {
+  color: var(--type-6);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
 }

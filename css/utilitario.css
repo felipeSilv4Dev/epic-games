@@ -54,15 +54,7 @@
   --type-10: #00bf00;
   --type-11: #008600;
 }
-/* .container {
-  max-width: 81.25rem;
-  margin: 0 auto;
-}
-.container-e-pad {
-  max-width: 81.25rem;
-  margin: 0 auto;
-  padding: 0rem 8rem;
-} */
+
 .flex {
   display: flex;
   align-items: center;

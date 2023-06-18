@@ -18,12 +18,12 @@ a {
 }
 body {
   max-width: 100%;
+  margin: 0 auto;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   background: var(--bg-2);
   color: var(--type-1);
 }
 .main {
-  margin: 0 auto;
   padding: 0rem 18.1rem;
 }
 a,

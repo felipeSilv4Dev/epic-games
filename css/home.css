@@ -41,15 +41,14 @@
 /* home info */
 .home__content {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 76% 24%;
   gap: 2.432rem;
 }
 .home__content--info {
   position: relative;
 }
 .home__content--info img {
-  height: 100%;
-  width: 120vh;
+  width: 100%;
   border-radius: 2rem;
 }
 .home__content--info-text {

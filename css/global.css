@@ -17,10 +17,11 @@ a {
   text-decoration: none;
 }
 body {
-  max-width: 100%;
+  /* max-width: 100%; */
   margin: 0 auto;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   background: var(--bg-2);
+  font-weight: 400;
   color: var(--type-1);
 }
 .main {

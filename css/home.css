@@ -53,23 +53,23 @@
 }
 .home__content--info-text {
   position: absolute;
-  max-width: 30rem;
+  max-width: 40.1%;
   margin: 32% 4%;
   bottom: -48%;
 }
 .home__content--info-text span {
-  font-size: calc(1.6vw - 100%);
+  font-size: max(1rem, 1vw);
 }
 .home__content--info-text p {
   margin: 0.8rem 0 4rem;
-  font-size: calc(1.8vw - 100%);
-  line-height: calc(2.4vw - 100%);
+  font-size: max(1rem, 1vw);
+  line-height: 1.4vw;
 }
 .home__content--info-text .btn--white {
   padding: 1.3rem 1.6rem;
   background-color: var(--type-1);
   border-radius: 0.4rem;
-  font-size: calc(1.8vw - 100%);
+  font-size: max(1rem, 1vw);
   color: var(--type-5);
   transition: all 0.3s;
 }
@@ -97,6 +97,6 @@
 .home__content--games-game h3 {
   color: var(--type-6);
   text-transform: initial;
-  font-size: calc(1.8vw - 100%);
+  font-size: max(0.9rem, 1.2vw);
   line-height: calc(2.6vw - 100%);
 }

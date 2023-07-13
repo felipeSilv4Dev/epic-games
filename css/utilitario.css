@@ -22,7 +22,7 @@
   --type-13: #a9a9a9;
 }
 
-.valoran,
+/* .valoran,
 .gta {
   --type-10: #f23c53;
   --type-11: #a72a3a;
@@ -55,40 +55,10 @@
   --type-10: #00bf00;
   --type-11: #008600;
 }
-
+*/
 .flex {
   display: flex;
   align-items: center;
 }
-.preco-antigo {
-  color: var(--type-2);
-  position: relative;
-  z-index: 1;
-}
-.preco-antigo::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(245, 245, 245, 0.6);
-  z-index: -1;
-  top: 0.51rem;
-}
 
 /* modificações extras dos index */
-
-/* cyberpunk */
-.punk .circle-1 {
-  stroke-dashoffset: calc(252 - 158.76);
-}
-.punk .circle {
-  stroke-dasharray: 25%;
-}
-
-/* assassin's creed */
-.assassins .circle-1 {
-  stroke-dashoffset: calc(252 - 229.32);
-}
-.assassins .circle {
-  stroke-dasharray: 32%;
-}

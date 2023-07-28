@@ -56,9 +56,29 @@
   --type-11: #008600;
 }
 */
+
+/* Display flex */
 .flex {
   display: flex;
   align-items: center;
 }
 
-/* modificações extras dos index */
+/* Price */
+.price-discount {
+  padding: 0rem 0.8rem;
+  border-radius: 0.4rem;
+  background-color: var(--bg-5);
+}
+.price-old {
+  color: var(--type-13);
+  position: relative;
+}
+.price-old::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  background-color: var(--type-13);
+  height: 0.1rem;
+  top: 45%;
+}

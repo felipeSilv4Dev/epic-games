@@ -11,6 +11,7 @@
 }
 .header__menu--nav {
   gap: 2.3rem;
+  transition: all 0.3s;
   font-size: 1.2rem;
 }
 .header__menu--nav a {
@@ -43,21 +44,26 @@
 .header__menu--login {
   gap: 2.5rem;
   font-size: 1.2rem;
+  transition: all 0.3s;
 }
 .header__menu--login-sign {
   position: relative;
   right: 12.5rem;
   gap: 0.6rem;
+  transition: all 0.3s;
 }
 .header__menu--login-icon {
-  font-size: 2.4rem;
   color: var(--type-2);
   text-align: center;
   position: relative;
   right: 12.5rem;
+  top: 0.3rem;
+  font-size: 2.4rem;
+  transition: all 0.3s;
 }
 .fa-solid {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  transition: all 0.01s;
 }
 a.btn {
   position: absolute;

@@ -22,9 +22,12 @@ body {
   background: var(--bg-2);
   font-weight: 400;
   color: var(--type-1);
+  margin-bottom: 60rem;
 }
 .main {
-  padding: 0rem 18.1rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 clamp(5rem, calc(67.5% / 5), 18.1rem);
 }
 a,
 h1,
@@ -34,4 +37,22 @@ h4 {
   font-weight: 400;
   color: var(--type-1);
   text-transform: uppercase;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+  .main {
+    max-width: 160rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .main {
+    max-width: 140rem;
+  }
 }

@@ -4,7 +4,7 @@
 }
 .home__menu {
   gap: 1.4rem;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, calc((19.8vw / 10) - 100%), 1.2rem);
   margin-bottom: 3rem;
 }
 .home__menu a {
@@ -35,14 +35,16 @@
 }
 .home__menu--search .fa-solid {
   position: relative;
-  right: -3.8rem;
+  right: -3.7rem;
+  top: -0.1rem;
 }
 
 /* home info */
 .home__content {
   display: grid;
   grid-template-columns: 79.7fr 24.9fr;
-  gap: 2.432rem;
+
+  /* gap: clamp(1.6rem, 2.432rem, 2vw); */
 }
 .home__content--info {
   position: relative;
@@ -74,17 +76,21 @@
   transition: all 0.3s;
 }
 .home__content--info-text .btn--white:hover {
-  background-color: var(--type-9);
+  background-color: var(--bg-5);
+  color: var(--type-1);
 }
 
 /* home games */
+.home__content--games-game {
+  margin-left: 1.5vw;
+}
 .home__content--games-game img {
-  max-width: 28%;
+  height: 80%;
+  width: 28%;
 }
 
 .home__content--games {
   display: grid;
-  /* width: 24.9rem; */
 }
 .home__content--games-game {
   padding: 1.3em 1.6em;
@@ -97,6 +103,6 @@
 .home__content--games-game h3 {
   color: var(--type-6);
   text-transform: initial;
-  font-size: max(0.9rem, 1.2vw);
-  line-height: calc(2.6vw - 100%);
+  font-size: calc((1.74vw - 90%));
+  line-height: 1.6vw;
 }

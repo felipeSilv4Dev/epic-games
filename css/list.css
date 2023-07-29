@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1rem;
+  margin: 7.7rem 0;
+}
+
+.list__games:not(:first-child) {
+  padding-left: 1rem;
+  border-left: 1px solid var(--bg-6);
+}
+.list__games:first-child {
+  padding-right: 1rem;
+}
+.list__games:nth-child(2n) {
+  padding-right: 1rem;
+}
+
+.list__games--heading {
+  justify-content: space-between;
+  margin-bottom: 2.2rem;
+}
+.list__games--heading h2 {
+  font-size: clamp(0.9rem, calc((20.5vw / 10) - 100%), 1.6rem);
+}
+.list__games--container:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.list__games--game {
+  gap: 1.2rem;
+  transition: all 0.2s;
+  padding: 0.9rem 1.4rem;
+  border-radius: 1.6rem;
+}
+.list__games--game:hover {
+  background-color: var(--bg-6);
+}
+.list__games--game-title {
+  font-size: clamp(0.9rem, calc((16.5vw / 10) - 100%), 1.2rem);
+}
+
+.list__games--game img {
+  height: clamp(2vw, 5vw, 5.5vw);
+  width: auto;
+}

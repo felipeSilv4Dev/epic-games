@@ -29,6 +29,9 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 4.2rem;
 }
+.free__games.secundary {
+  grid-template-columns: repeat(2, 1fr);
+}
 .free__games img {
   width: 100%;
   height: auto;

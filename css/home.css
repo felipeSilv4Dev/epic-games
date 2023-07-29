@@ -43,8 +43,6 @@
 .home__content {
   display: grid;
   grid-template-columns: 79.7fr 24.9fr;
-
-  /* gap: clamp(1.6rem, 2.432rem, 2vw); */
 }
 .home__content--info {
   position: relative;
@@ -85,7 +83,7 @@
   margin-left: 1.5vw;
 }
 .home__content--games-game img {
-  height: 80%;
+  height: 70%;
   width: 28%;
 }
 
@@ -93,9 +91,10 @@
   display: grid;
 }
 .home__content--games-game {
-  padding: 1.3em 1.6em;
+  padding: 0 2.2rem 0 1.3rem;
   gap: 1.6rem;
   border-radius: 1.6rem;
+  transition: all 0.2s;
 }
 .home__content--games-game:hover {
   background-color: var(--bg-4);

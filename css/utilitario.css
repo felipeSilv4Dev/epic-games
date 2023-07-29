@@ -8,6 +8,7 @@
   --bg-7: #035ab9;
   --bg-8: #3d3d3d;
   --bg-9: #262626;
+  --bg-10: #494949;
   --type-1: #ffffff;
   --type-2: #aaaaaa;
   --type-4: #666666;
@@ -81,4 +82,15 @@
   background-color: var(--type-13);
   height: 0.1rem;
   top: 45%;
+}
+
+/*btn*/
+
+.btn-t {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--type-1);
+  transition: all 0.3s;
+}
+.btn-t:hover {
+  background-color: var(--bg-10);
 }

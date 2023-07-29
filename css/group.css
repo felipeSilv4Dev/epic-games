@@ -17,7 +17,6 @@
 
 .group__container h3 {
   margin: 1.2rem 0 0.8rem;
-  text-transform: uppercase;
   font-size: clamp(0.9rem, calc((18vw / 10) - 100%), 1.6rem);
 }
 

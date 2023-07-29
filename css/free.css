@@ -1,0 +1,48 @@
+.free {
+  padding: 3rem 4rem;
+  background-color: var(--bg-6);
+  border-radius: 0.4rem;
+}
+
+.free__heading {
+  margin: 0.5rem 0 3rem;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.free__heading--title {
+  gap: 1rem;
+}
+.fa-gift {
+  font-size: 2.5rem;
+}
+.free__heading--title h4 {
+  text-transform: initial;
+}
+
+.free__heading .btn-t {
+  font-size: 1.2rem;
+}
+
+.free__games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.2rem;
+}
+.free__games img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.free__games img:hover {
+  opacity: 0.7;
+}
+.free__games h4 {
+  margin: 1.2rem 0;
+  font-size: clamp(0.9rem, calc((18vw / 10) - 100%), 1.4rem);
+}
+.free__games p {
+  color: var(--type-2);
+  font-size: clamp(0.9rem, calc((18vw / 10) - 100%), 1.4rem);
+}

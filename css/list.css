@@ -20,6 +20,10 @@
   justify-content: space-between;
   margin-bottom: 2.2rem;
 }
+.list__games--heading .btn-t:hover {
+  background-color: var(--bg-6);
+}
+
 .list__games--heading h2 {
   font-size: clamp(0.9rem, calc((20.5vw / 10) - 100%), 1.6rem);
 }

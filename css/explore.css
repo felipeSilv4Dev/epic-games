@@ -1,0 +1,13 @@
+.explore {
+  gap: 4.6rem;
+}
+
+.explore__info h2 {
+  font-size: clamp(0.9rem, calc((24vw / 10) - 100%), 2.2rem);
+  margin-bottom: 1.95rem;
+}
+.explore__info p {
+  font-size: clamp(0.9rem, calc((19vw / 10) - 100%), 1.4rem);
+  line-height: 1.7;
+  color: var(--type-7);
+}

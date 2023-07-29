@@ -33,11 +33,32 @@
   width: 100%;
   height: auto;
   transition: all 0.3s;
-  cursor: pointer;
+}
+.free__games a {
+  position: relative;
 }
 .free__games img:hover {
   opacity: 0.7;
 }
+.free__games--imgF {
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--type-5);
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  color: var(--type-1);
+  font-size: clamp(0.9rem, calc((16.5vw / 10) - 100%), 1.2rem);
+  padding: 0.2rem;
+}
+
+.free__games--imgF.now {
+  background-color: var(--bg-5);
+}
+
 .free__games h4 {
   margin: 1.2rem 0;
   font-size: clamp(0.9rem, calc((18vw / 10) - 100%), 1.4rem);

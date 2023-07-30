@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--bg-3);
+  margin-top: 12.3rem;
+}
+
+.footer__container {
+  max-width: 990rem;
+  margin: 0 auto;
+  padding: 2rem 7.2rem 4rem;
+}
+
+.footer__heading {
+  margin: 1rem 0 0;
+}
+
+.footer__heading--network {
+  display: inline-block;
+  font-size: 2.7rem;
+}
+.footer__heading--network i:not(:last-child) {
+  margin-right: 0.8rem;
+  transition: all 0.3s;
+}
+
+.footer__heading--network i:hover {
+  cursor: pointer;
+  color: var(--bg-5);
+}
+.footer__heading--arrow {
+  display: inline-block;
+  float: right;
+  transform: rotate(-90deg);
+  font-size: 2.3rem;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--type-1);
+  color: var(--type-1);
+  transition: all 0.3s;
+}
+
+.footer__heading--arrow:hover {
+  cursor: pointer;
+  color: var(--bg-5);
+  border-color: var(--bg-5);
+}
+
+.footer__resource {
+  margin-top: 2rem;
+}
+
+.footer__resource span {
+  font-size: 1.4rem;
+  color: var(--type-8);
+  margin-bottom: 1rem;
+}
+
+.footer__resource--list {
+  gap: 2.4rem;
+}
+
+.footer__resource--list {
+  margin: 0.8rem 0 4.3rem;
+  font-size: 1.4rem;
+  color: var(--type-9);
+}
+
+.footer__resource--list p {
+  transition: all 0.3s;
+}
+.footer__resource--list-text p:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.footer__resource--list p:hover {
+  cursor: pointer;
+  color: var(--bg-5);
+}
+.footer__copy {
+  max-width: 74%;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--type-8);
+  margin-bottom: 3rem;
+}
+
+.footer__base {
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.footer__base p {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--type-9);
+  transition: all 0.3s;
+}
+
+.footer__base p:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__base p:hover {
+  cursor: pointer;
+  color: var(--bg-5);
+}

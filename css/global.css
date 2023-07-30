@@ -22,7 +22,6 @@ body {
   background: var(--bg-2);
   font-weight: 400;
   color: var(--type-1);
-  margin-bottom: 60rem;
 }
 .main {
   max-width: 140rem;

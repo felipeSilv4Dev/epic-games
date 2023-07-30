@@ -29,7 +29,7 @@
   color: var(--bg-5);
 }
 .footer__heading--arrow {
-  display: inline-block;
+  display: table;
   float: right;
   transform: rotate(-90deg);
   font-size: 2.3rem;

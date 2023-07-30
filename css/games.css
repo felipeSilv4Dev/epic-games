@@ -54,3 +54,12 @@
   gap: 0.8rem;
   font-size: clamp(0.9rem, calc((18vw / 10) - 100%), 1.6rem);
 }
+
+@media (max-width: 57em) {
+  .games__game--detalis h4 {
+    font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.6rem);
+  }
+  .games__game--detalis--price {
+    font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.6rem);
+  }
+}

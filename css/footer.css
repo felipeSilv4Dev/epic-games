@@ -103,3 +103,21 @@
   cursor: pointer;
   color: var(--bg-5);
 }
+
+@media (max-width: 57em) {
+  .footer__container {
+    padding: 2rem 3rem;
+  }
+  .footer__resource span {
+    font-size: 1.6rem;
+  }
+  .footer__resource--list {
+    font-size: 1.6rem;
+  }
+  .footer__copy {
+    font-size: 1.5rem;
+  }
+  .footer__base p {
+    font-size: 1.5rem;
+  }
+}

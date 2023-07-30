@@ -11,3 +11,12 @@
   line-height: 1.7;
   color: var(--type-7);
 }
+
+@media (max-width: 57em) {
+  .explore__info h2 {
+    font-size: clamp(0.9rem, calc((28vw / 10) - 100%), 2.2rem);
+  }
+  .explore__info p {
+    font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.5rem);
+  }
+}

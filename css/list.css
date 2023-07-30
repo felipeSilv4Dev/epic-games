@@ -47,3 +47,15 @@
   height: clamp(2vw, 5vw, 5.5vw);
   width: auto;
 }
+
+@media (max-width: 57em) {
+  .list__games--heading .btn-t {
+    font-size: 1.3rem;
+  }
+  .list__games--heading h2 {
+    font-size: clamp(0.9rem, calc((23.5vw / 10) - 100%), 1.6rem);
+  }
+  .list__games--game-title {
+    font-size: clamp(0.9rem, calc((23.5vw / 10) - 100%), 1.4rem);
+  }
+}

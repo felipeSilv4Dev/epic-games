@@ -55,3 +55,13 @@ h4 {
     max-width: 140rem;
   }
 }
+
+@media (max-width: 57em) {
+  html {
+    font-size: 50%;
+  }
+  .main {
+    max-width: 120rem;
+    padding: 1.6rem;
+  }
+}

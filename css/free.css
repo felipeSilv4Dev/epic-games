@@ -70,3 +70,18 @@
   color: var(--type-2);
   font-size: clamp(0.9rem, calc((18vw / 10) - 100%), 1.4rem);
 }
+
+@media (max-width: 57em) {
+  .free__heading .btn-t {
+    font-size: 1.4rem;
+  }
+  .free__games--imgF {
+    font-size: clamp(0.9rem, calc((21.5vw / 10) - 100%), 1.4rem);
+  }
+  .free__games h4 {
+    font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.4rem);
+  }
+  .free__games p {
+    font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.4rem);
+  }
+}

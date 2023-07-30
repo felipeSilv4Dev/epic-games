@@ -16,7 +16,9 @@
 .footer__heading--network {
   display: inline-block;
   font-size: 2.7rem;
+  color: var(--type-9);
 }
+
 .footer__heading--network i:not(:last-child) {
   margin-right: 0.8rem;
   transition: all 0.3s;

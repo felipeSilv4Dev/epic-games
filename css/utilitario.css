@@ -94,3 +94,39 @@
 .btn-t:hover {
   background-color: var(--bg-10);
 }
+[data-control="slide"] {
+  display: none;
+}
+
+@media (max-width: 47.5em) {
+  /* slide */
+  .slide {
+    display: flex;
+    flex-shrink: 0;
+    gap: 2rem;
+  }
+  [data-control="slide"] {
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 50%;
+    gap: 1rem;
+  }
+
+  [data-control="slide"] span {
+    display: block;
+    background-color: var(--bg-10);
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    text-indent: -999rem;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  [data-control="slide"] span.active,
+  [data-control="slide"] span:hover {
+    background-color: var(--type-1);
+  }
+}

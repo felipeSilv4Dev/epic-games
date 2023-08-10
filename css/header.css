@@ -95,3 +95,12 @@ a.btn:hover {
     font-size: 2.1rem;
   }
 }
+
+@media (max-width: 47.5em) {
+  .header__menu--nav {
+    display: none;
+  }
+  .header__menu--login {
+    display: none;
+  }
+}

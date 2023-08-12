@@ -1,10 +1,13 @@
 .group {
   margin: 8.8rem 0 5.6rem;
+  overflow: initial;
 }
 .group__slide {
   display: flex;
   gap: 1rem;
+  flex-shrink: 1;
 }
+
 .group__container {
   flex: 1;
 }
@@ -51,10 +54,10 @@
 }
 
 @media (max-width: 47.5em) {
-  .group {
+  .group__wrapper {
+    padding-bottom: 3.3rem;
     overflow: hidden;
     position: relative;
-    padding-bottom: 3.3rem;
   }
 
   .group__slide.slide div {

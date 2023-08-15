@@ -1,10 +1,12 @@
 .group {
   margin: 8.8rem 0 5.6rem;
   overflow: initial;
+  gap: 1.2rem;
 }
 .group__slide {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
+
   flex-shrink: 1;
 }
 

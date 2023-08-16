@@ -1,7 +1,10 @@
 export default function SlideGames() {}
 const wrapper = document.querySelector(".group");
 const slide = document.querySelector(".group__slide");
-let observe = 0;
+const wrapper2 = document.querySelector(".group-2");
+const slide2 = document.querySelector(".group__slide-2");
+let observe;
+
 class Slide {
   constructor(wrapper, slide, quantity) {
     this.slide = document.querySelector(slide);
@@ -112,6 +115,8 @@ class Slide {
     this.moveSlide(activeSlide.position);
     this.slideIndexNav(index);
     this.dist.finalPosition = activeSlide.position;
+    observe = 0;
+
     this.wrapper.dispatchEvent(this.changeEvent);
   }
 
@@ -159,10 +164,16 @@ class Control extends Slide {
       e.preventDefault();
       this.changeSlide(index);
     });
-    this.wrapper.addEventListener("changeEvent", this.activeControlItem);
+
+    this.wrapper.addEventListener("changeEvent", () => {
+      this.activeControlItem();
+    });
   }
 
   activeControlItem() {
+    this.controlArray.forEach((i) => {
+      i.classList.remove(this.active);
+    });
     this.controlArray.forEach((i) => {
       i.classList.remove(this.active);
     });
@@ -184,6 +195,9 @@ class Control extends Slide {
   removeClass() {
     wrapper.classList.remove("group__wrapper");
     slide.classList.remove("slide");
+
+    wrapper2.classList.remove("group__wrapper-2");
+    slide2.classList.remove("slide-2");
   }
   removeEvents() {
     this.moveSlide(-this.wrapper.offsetWidth + this.wrapper.offsetWidth);
@@ -194,15 +208,11 @@ class Control extends Slide {
     this.wrapper.removeEventListener("touchend", this.onEnd);
   }
 }
-///////////////////////////////////////////////////////////////////////
-const group = new Control(".group__wrapper", ".slide", 3);
-
-group.init();
-group.addControl();
 
 window.addEventListener("load", () => {
   if (window.outerWidth > 760) {
     group.removeEvents();
+    group2.removeEvents();
   }
 });
 
@@ -211,13 +221,17 @@ const addEventsSlide = function () {
     observe++;
     wrapper.classList.add("group__wrapper");
     slide.classList.add("slide");
+    wrapper2.classList.add("group__wrapper-2");
+    slide2.classList.add("slide-2");
     group.addEvents();
+    group2.addEvents();
   }
 };
 const removeEventsSlide = function () {
   if (this.innerWidth > 760) {
     observe = 0;
     group.removeEvents();
+    group2.removeEvents();
   }
 };
 
@@ -226,3 +240,11 @@ window.addEventListener("resize", removeEventsSlide);
 // if (observe) {
 //   window.removeEventListener("resize", addEventsSlide);
 // }
+const group = new Control(".group__wrapper", ".slide", 3);
+const group2 = new Control(".group__wrapper-2", ".slide-2", 3);
+
+group.init();
+group.addControl();
+group2.init();
+group2.addControl();
+///////////////////////////////////////////////////////////////////////

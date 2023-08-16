@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 47.5em) {
-  slide .slide {
+  .slide {
     display: flex;
     flex-shrink: 0;
     gap: 2rem;

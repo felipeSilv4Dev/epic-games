@@ -77,6 +77,48 @@ a.btn:hover {
   background-color: var(--bg-7);
   color: var(--type-1);
 }
+.header__menu--mobile-bg {
+  display: none;
+  position: absolute;
+  width: 6rem;
+  height: 5rem;
+  right: 0;
+  background-color: var(--bg-5);
+}
+.header__menu--mobile {
+  position: absolute;
+  display: none;
+  border: none;
+  width: 3.2rem;
+  left: 50%;
+  z-index: 99;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 0.2rem;
+}
+.header__menu--mobile::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 3.2rem;
+  height: 0.2rem;
+  top: -0.9rem;
+  background-color: var(--type-1);
+  z-index: 9;
+}
+.header__menu--mobile::after {
+  position: relative;
+  bottom: -0.8rem;
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 0.2rem;
+  background-color: var(--type-1);
+  z-index: 9;
+}
+.header__menu--mobile-filter {
+  display: none;
+}
 
 @media (max-width: 57em) {
   .header__menu--nav {
@@ -99,8 +141,29 @@ a.btn:hover {
 @media (max-width: 47.5em) {
   .header__menu--nav {
     display: none;
+    position: absolute;
+    z-index: 9;
+    top: 5rem;
+    gap: 1rem;
+    width: 90vw;
+    right: 0;
+    padding-bottom: 100vh;
+    background-color: var(--bg-1);
+  }
+  .header__menu--nav:hover a::before {
+    display: none;
+  }
+  .header__menu--nav li {
+    border-bottom: 0.2rem solid var(--bg-10);
+    padding: 0.1rem 2rem;
   }
   .header__menu--login {
     display: none;
+  }
+  .header__menu--mobile {
+    display: block;
+  }
+  .header__menu--mobile-bg {
+    display: block;
   }
 }

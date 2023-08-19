@@ -50,7 +50,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--type-5);
-  z-index: 999;
+  z-index: 4;
   width: 100%;
   text-align: center;
   color: var(--type-1);
@@ -83,5 +83,21 @@
   }
   .free__games p {
     font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.4rem);
+  }
+}
+
+@media (max-width: 47.5em) {
+  .free__games {
+    gap: 2.2rem;
+  }
+  .free__games h4 {
+    font-size: clamp(0.9rem, calc((30vw / 10) - 100%), 1.9rem);
+  }
+  .free__games p {
+    font-size: clamp(0.9rem, calc((30vw / 10) - 100%), 1.9rem);
+  }
+  .free__games--imgF {
+    font-size: clamp(0.9rem, calc((30vw / 10) - 100%), 1.5rem);
+    padding: 0.4rem;
   }
 }

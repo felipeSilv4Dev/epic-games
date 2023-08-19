@@ -126,8 +126,7 @@
     cursor: pointer;
   }
 
-  [data-control="slide"] span.active,
-  [data-control="slide"] span:hover {
+  [data-control="slide"] span.active {
     background-color: var(--type-1);
   }
 }

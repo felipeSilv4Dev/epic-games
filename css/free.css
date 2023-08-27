@@ -87,17 +87,36 @@
 }
 
 @media (max-width: 47.5em) {
+  .free {
+    padding: 3rem 1.6rem;
+  }
   .free__games {
     gap: 2.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .free__heading--title {
+    gap: 3rem;
+  }
+  .free__heading--title h4 {
+    font-size: 2.4rem;
+  }
+
+  .free__heading--title .fa-gift {
+    font-size: 3rem;
+  }
+  .free__heading .btn-t {
+    font-size: 2rem;
   }
   .free__games h4 {
-    font-size: clamp(0.9rem, calc((30vw / 10) - 100%), 1.9rem);
+    margin-top: 2rem;
+    font-size: 2.3rem;
   }
   .free__games p {
-    font-size: clamp(0.9rem, calc((30vw / 10) - 100%), 1.9rem);
+    font-size: 2rem;
   }
   .free__games--imgF {
-    font-size: clamp(0.9rem, calc((30vw / 10) - 100%), 1.5rem);
+    font-size: 2rem;
     padding: 0.4rem;
   }
 }

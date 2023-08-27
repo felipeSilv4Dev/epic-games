@@ -66,3 +66,9 @@ h4 {
     padding: 1.6rem;
   }
 }
+
+@media (max-width: 47.5em) {
+  .main {
+    padding: 1.6rem 0;
+  }
+}

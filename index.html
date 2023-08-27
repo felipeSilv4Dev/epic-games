@@ -26,7 +26,7 @@
     <title>Epic Games</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="menu">
       <div class="header__menu container flex">
         <div class="header__menu--logo flex">
           <img src="./img/menu/logo.svg" width="24" height="29" alt="Logo" />
@@ -50,7 +50,9 @@
         </div>
 
         <div class="menu__mobile-bg">
-          <button class="menu__mobile"></button>
+          <a href="#menu">
+            <button class="menu__mobile"></button>
+          </a>
         </div>
       </div>
     </header>
@@ -822,6 +824,6 @@
       </div>
     </footer>
 
-    <script type="module" src="./js/menu-mobile.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>

@@ -227,6 +227,7 @@ const addEventsSlide = function () {
     group2.addEvents();
   }
 };
+
 const removeEventsSlide = function () {
   if (this.innerWidth > 760) {
     observe = 0;
@@ -237,9 +238,8 @@ const removeEventsSlide = function () {
 
 window.addEventListener("resize", addEventsSlide);
 window.addEventListener("resize", removeEventsSlide);
-// if (observe) {
-//   window.removeEventListener("resize", addEventsSlide);
-// }
+
+///
 const group = new Control(".group__wrapper", ".slide", 3);
 const group2 = new Control(".group__wrapper-2", ".slide-2", 3);
 

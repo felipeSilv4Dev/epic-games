@@ -1,12 +1,13 @@
 .header {
   padding: 0.7rem 1.6rem;
-  background: var(--bg-1);
+  background: var(--bg-6);
   position: relative;
 }
 .header__menu {
   justify-content: space-between;
 }
 .header__menu--logo {
+  cursor: pointer;
   gap: 2.5rem;
 }
 .header__menu--nav {
@@ -60,6 +61,7 @@
   top: 0.3rem;
   font-size: 2.4rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .fa-solid {
   font-size: 1.6rem;
@@ -77,46 +79,50 @@ a.btn:hover {
   background-color: var(--bg-7);
   color: var(--type-1);
 }
-.header__menu--mobile-bg {
+.menu__mobile-bg {
   display: none;
   position: absolute;
-  width: 6rem;
-  height: 5rem;
+  width: 6.7rem;
+  height: 100%;
   right: 0;
   background-color: var(--bg-5);
+  cursor: pointer;
 }
-.header__menu--mobile {
+.menu__mobile {
+  cursor: pointer;
   position: absolute;
   display: none;
   border: none;
-  width: 3.2rem;
+  width: 3.4rem;
   left: 50%;
   z-index: 99;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 0.2rem;
+  height: 0.3rem;
 }
-.header__menu--mobile::before {
+.menu__mobile::before {
   content: "";
+  transition: all 0.3s;
   position: relative;
   display: block;
-  width: 3.2rem;
+  width: 3.4rem;
   height: 0.2rem;
   top: -0.9rem;
   background-color: var(--type-1);
   z-index: 9;
 }
-.header__menu--mobile::after {
+.menu__mobile::after {
+  transition: all 0.3s;
   position: relative;
   bottom: -0.8rem;
   content: "";
   display: block;
-  width: 3.2rem;
-  height: 0.2rem;
+  width: 3.4rem;
+  height: 0.3rem;
   background-color: var(--type-1);
   z-index: 9;
 }
-.header__menu--mobile-filter {
+.mobile__bg {
   display: none;
 }
 
@@ -135,5 +141,119 @@ a.btn:hover {
   }
   .header__menu--login-icon {
     font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 47.5em) {
+  .header__menu--logo img {
+    height: 5rem;
+    width: auto;
+  }
+  .main {
+    overflow-x: hidden;
+    position: relative;
+  }
+  body.active {
+    overflow: hidden;
+  }
+  .menu__mobile-bg,
+  .menu__mobile {
+    display: block;
+  }
+  .menu__mobile-bg.active {
+    background-color: var(--bg-4);
+  }
+  .menu__mobile-bg.active .menu__mobile {
+    background-color: transparent;
+  }
+  .menu__mobile-bg.active .menu__mobile::before {
+    transform: rotate(45deg);
+    top: -0.1rem;
+    color: var(--type-9);
+  }
+  .menu__mobile-bg.active .menu__mobile::after {
+    transform: rotate(-45deg);
+    top: -0.3rem;
+    color: var(--type-9);
+  }
+
+  .header__menu--nav.hidden,
+  .header__menu--login.hidden {
+    display: none;
+  }
+  .header__menu--nav a::before {
+    display: none;
+  }
+  .mobile__bg {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: all 0.2s;
+    transform: translateX(1000px);
+  }
+
+  .mobile__bg.active {
+    transform: translateX(0);
+  }
+
+  .mobile__container {
+    position: absolute;
+    right: 0;
+    width: 90vw;
+    height: 100vh;
+    background-color: var(--bg-6);
+  }
+  .mobile__nav a {
+    font-size: 1.8rem;
+    display: block;
+    color: var(--type-9);
+    padding: 1rem 2rem;
+    letter-spacing: 0.3rem;
+    border-bottom: 1px solid var(--bg-8);
+  }
+  .mobile__login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 100%;
+    bottom: 3.2em;
+    gap: 0;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  }
+  .header__menu--login-icon {
+    position: initial;
+    grid-row: 2;
+    grid-column: 2;
+    border-top: 1px solid var(--bg-8);
+    border-left: 1px solid var(--bg-8);
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .mobile__sign {
+    display: block;
+    position: initial;
+    border-top: 1px solid var(--bg-8);
+    padding: 1.5rem 0;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .mobile__sign .fa-solid {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+  }
+  .btn--download.mobile__download {
+    position: initial;
+    grid-column: 1/-1;
+    padding: 2rem 1rem;
+    width: 100%;
+    grid-row: 3;
   }
 }

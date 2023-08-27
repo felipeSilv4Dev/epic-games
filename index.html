@@ -32,7 +32,7 @@
           <img src="./img/menu/logo.svg" width="24" height="29" alt="Logo" />
 
           <nav>
-            <ul class="header__menu--nav flex">
+            <ul class="header__menu--nav menu--hidden hidden flex">
               <li><a href="#estore">STORE</a></li>
               <li><a href="#faq">faq</a></li>
               <li><a href="#help">Help</a></li>
@@ -40,7 +40,7 @@
             </ul>
           </nav>
         </div>
-        <div class="header__menu--login flex">
+        <div class="header__menu--login menu--hidden hidden flex">
           <i class="icon-basic-world header__menu--login-icon"></i>
 
           <a class="header__menu--login-sign flex" href="#sign"
@@ -49,14 +49,38 @@
           <a class="btn btn--download" href="#download">Download</a>
         </div>
 
-        <div class="header__menu--mobile-bg">
-          <button class="header__menu--mobile"></button>
+        <div class="menu__mobile-bg">
+          <button class="menu__mobile"></button>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <span class="header__menu--mobile-filter"> </span>
+      <div class="mobile__bg">
+        <div class="mobile__container">
+          <nav>
+            <ul class="header__menu--nav mobile__nav">
+              <li><a href="#estore">STORE</a></li>
+              <li><a href="#faq">faq</a></li>
+              <li><a href="#help">Help</a></li>
+              <li><a href="#unreal">UNREAL ENGINE</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__menu--login mobile__login flex">
+            <i class="icon-basic-world header__menu--login-icon"></i>
+
+            <a class="header__menu--login-sign mobile__sign flex" href="#sign"
+              ><i class="fa-solid fa-user-plus"></i>sign in</a
+            >
+
+            <a class="btn btn--download mobile__download" href="#download"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+
       <section class="home">
         <div class="home__menu flex">
           <div class="home__menu--search flex">
@@ -798,6 +822,6 @@
       </div>
     </footer>
 
-    <script type="module" src="./js/slide.js"></script>
+    <script type="module" src="./js/menu-mobile.js"></script>
   </body>
 </html>

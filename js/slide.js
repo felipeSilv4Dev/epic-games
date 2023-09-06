@@ -82,7 +82,8 @@ class Slide {
     this.onEnd = this.onEnd.bind(this);
   }
   slidePosition(slide) {
-    const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
+    const margin =
+      (this.wrapper.offsetWidth - slide.offsetWidth) / this.quantity + 1;
     return margin - slide.offsetLeft;
   }
 
@@ -144,7 +145,7 @@ class Control extends Slide {
   createControl() {
     const control = document.createElement("div");
     control.dataset.control = "slide";
-    this.slideArray.forEach((item, index, a) => {
+    this.slideArray.forEach((_, index) => {
       control.innerHTML += `
 				<span><a href"slide${index + 1}">${index + 1}</a></span>`;
     });
@@ -192,6 +193,9 @@ class Control extends Slide {
 const groupM1 = new Control(".wrapper-m1", ".slide-m1", 3);
 const groupM2 = new Control(".wrapper-m2", ".slide-m2", 3);
 const home = new Control(".wrapper-h", ".slide-h", 5);
+const game1 = new Control(".wrapper-g1", ".slide-g1", 5);
+const game2 = new Control(".wrapper-g2", ".slide-g2", 5);
+const game3 = new Control(".wrapper-g3", ".slide-g3", 5);
 
 groupM1.init();
 groupM1.addControl();
@@ -201,5 +205,9 @@ groupM2.addControl();
 
 home.init();
 home.addControl();
+
+game1.init();
+game2.init();
+game3.init();
 
 ///////////////////////////////////////////////////////////////////////

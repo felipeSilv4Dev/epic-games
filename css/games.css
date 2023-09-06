@@ -63,3 +63,34 @@
     font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.6rem);
   }
 }
+
+@media (max-width: 47.5em) {
+  .games {
+    margin: 8.8rem 2rem;
+  }
+  .games__heading--arrow {
+    display: none;
+  }
+  .games__heading {
+    margin: 0 1.6rem 1.8rem;
+  }
+  .games__heading h2 {
+    font-size: 2.4vw;
+  }
+  .games__game {
+    display: flex;
+  }
+
+  .games__game--detalis {
+    width: 80vw;
+    max-width: 80vw;
+    flex-shrink: 0;
+  }
+
+  .games__game--detalis h4 {
+    font-size: 2vw;
+  }
+  .games__game--detalis--price {
+    font-size: 2vw;
+  }
+}

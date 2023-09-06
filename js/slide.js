@@ -82,8 +82,7 @@ class Slide {
     this.onEnd = this.onEnd.bind(this);
   }
   slidePosition(slide) {
-    const margin =
-      (this.wrapper.offsetWidth - slide.offsetWidth) / this.quantity + 1;
+    const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
     return margin - slide.offsetLeft;
   }
 
@@ -196,6 +195,7 @@ const home = new Control(".wrapper-h", ".slide-h", 5);
 const game1 = new Control(".wrapper-g1", ".slide-g1", 5);
 const game2 = new Control(".wrapper-g2", ".slide-g2", 5);
 const game3 = new Control(".wrapper-g3", ".slide-g3", 5);
+const list = new Control(".wrapper-l", ".slide-l", 3);
 
 groupM1.init();
 groupM1.addControl();
@@ -209,5 +209,7 @@ home.addControl();
 game1.init();
 game2.init();
 game3.init();
+list.init();
+list.addControl();
 
 ///////////////////////////////////////////////////////////////////////

@@ -1,9 +1,4 @@
 export default function SlideGames() {}
-const wrapper = document.querySelector(".group");
-const slide = document.querySelector(".group__slide");
-const wrapper2 = document.querySelector(".group-2");
-const slide2 = document.querySelector(".group__slide-2");
-let observe;
 
 class Slide {
   constructor(wrapper, slide, quantity) {
@@ -115,7 +110,6 @@ class Slide {
     this.moveSlide(activeSlide.position);
     this.slideIndexNav(index);
     this.dist.finalPosition = activeSlide.position;
-    observe = 0;
 
     this.wrapper.dispatchEvent(this.changeEvent);
   }
@@ -192,59 +186,20 @@ class Control extends Slide {
     this.evenControl = this.evenControl.bind(this);
     this.activeControlItem = this.activeControlItem.bind(this);
   }
-  removeClass() {
-    wrapper.classList.remove("group__wrapper");
-    slide.classList.remove("slide");
-
-    wrapper2.classList.remove("group__wrapper-2");
-    slide2.classList.remove("slide-2");
-  }
-  removeEvents() {
-    this.moveSlide(-this.wrapper.offsetWidth + this.wrapper.offsetWidth);
-    this.removeClass();
-    this.wrapper.removeEventListener("mousedown", this.onStart);
-    this.wrapper.removeEventListener("mouseup", this.onEnd);
-    this.wrapper.removeEventListener("touchstart", this.onStart);
-    this.wrapper.removeEventListener("touchend", this.onEnd);
-  }
 }
 
-window.addEventListener("load", () => {
-  if (window.outerWidth > 760) {
-    group.removeEvents();
-    group2.removeEvents();
-  }
-});
-
-const addEventsSlide = function () {
-  if (this.innerWidth <= 760 && observe < 1) {
-    observe++;
-    wrapper.classList.add("group__wrapper");
-    slide.classList.add("slide");
-    wrapper2.classList.add("group__wrapper-2");
-    slide2.classList.add("slide-2");
-    group.addEvents();
-    group2.addEvents();
-  }
-};
-
-const removeEventsSlide = function () {
-  if (this.innerWidth > 760) {
-    observe = 0;
-    group.removeEvents();
-    group2.removeEvents();
-  }
-};
-
-window.addEventListener("resize", addEventsSlide);
-window.addEventListener("resize", removeEventsSlide);
-
 ///
-const group = new Control(".group__wrapper", ".slide", 3);
-const group2 = new Control(".group__wrapper-2", ".slide-2", 3);
+const groupM1 = new Control(".wrapper-m1", ".slide-m1", 3);
+const groupM2 = new Control(".wrapper-m2", ".slide-m2", 3);
+const home = new Control(".wrapper-h", ".slide-h", 5);
 
-group.init();
-group.addControl();
-group2.init();
-group2.addControl();
+groupM1.init();
+groupM1.addControl();
+
+groupM2.init();
+groupM2.addControl();
+
+home.init();
+home.addControl();
+
 ///////////////////////////////////////////////////////////////////////

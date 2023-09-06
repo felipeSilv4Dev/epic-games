@@ -118,6 +118,9 @@
   font-size: calc((1.74vw - 90%));
   line-height: 1.6vw;
 }
+.home__content--mobile {
+  display: none;
+}
 
 /*1200*/
 @media (max-width: 75em) {
@@ -151,5 +154,59 @@
   .home__content--games-game h3 {
     font-size: calc((2.2vw - 90%));
     line-height: 1.9vw;
+  }
+}
+
+@media (max-width: 47.5em) {
+  .home__content {
+    display: none;
+  }
+  .home__content--games {
+    display: none;
+  }
+
+  .home__content--mobile {
+    display: flex;
+  }
+  .wrapper-h {
+    position: relative;
+  }
+  .home__content--mobile-info {
+    position: relative;
+    margin: 0 2rem;
+    flex-shrink: 0;
+    width: 90vw;
+    max-width: 80rem;
+  }
+  .home__content--mobile-info img {
+    border-radius: 16px;
+  }
+
+  .home__content--mobile--info-text {
+    position: absolute;
+    padding: 3.5rem;
+    bottom: 5%;
+    width: 70%;
+  }
+  .home__content--mobile--info-text span {
+    font-size: 1.8vw;
+    margin-bottom: 1.6rem;
+  }
+  .home__content--mobile--info-text p {
+    font-size: 2.3vw;
+    margin-bottom: 2.6rem;
+  }
+
+  .home__content--mobile--info-text .btn--white {
+    font-size: 2vw;
+    padding: 1.3rem 1.6rem;
+    background-color: var(--type-1);
+    border-radius: 0.4rem;
+    color: var(--type-5);
+    transition: all 0.3s;
+  }
+  .home__content--mobile--info-text .btn--white:hover {
+    background-color: var(--bg-5);
+    color: var(--type-1);
   }
 }

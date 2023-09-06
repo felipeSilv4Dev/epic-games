@@ -3,10 +3,12 @@ export default class MenuMobile {
     this.btn = document.querySelector(btn);
     this.btnBg = document.querySelector(btnBg);
     this.body = document.querySelector("body");
+    this.nameclass = this.btnBg.className;
     this.active = "active";
   }
   activeMenu() {
     this.scrollPage();
+
     this.btn.classList.toggle(this.active);
     this.btnBg.classList.toggle(this.active);
     this.body.classList.toggle(this.active);
@@ -19,10 +21,12 @@ export default class MenuMobile {
     });
   }
 
-  removeActive() {
-    this.btn.classList.remove(this.active);
-    this.btnBg.classList.remove(this.active);
-    this.body.classList.remove(this.active);
+  removeActive(e) {
+    if (e.target.classList.contains(this.nameclass)) {
+      this.btn.classList.remove(this.active);
+      this.btnBg.classList.remove(this.active);
+      this.body.classList.remove(this.active);
+    }
   }
 
   addEvents() {

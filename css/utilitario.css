@@ -100,26 +100,20 @@
 }
 
 @media (max-width: 47.5em) {
-  .slide {
-    display: flex;
-    flex-shrink: 0;
-    gap: 2rem;
-  }
   [data-control="slide"] {
     display: flex;
     position: absolute;
     transform: translate(-50%, -50%);
-    bottom: 0;
-    left: 50%;
-    overflow: visible;
+    bottom: -3rem;
     gap: 1rem;
+    left: 50%;
   }
 
   [data-control="slide"] span {
     display: block;
     background-color: var(--bg-10);
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     text-indent: -999rem;
     transition: all 0.3s;

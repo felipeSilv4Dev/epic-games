@@ -73,11 +73,13 @@ class Slide {
     this.wrapper.addEventListener("mousedown", this.onStart);
     this.wrapper.addEventListener("mouseup", this.onEnd);
     this.wrapper.addEventListener("touchstart", this.onStart);
+
     this.wrapper.addEventListener("touchend", this.onEnd);
   }
 
   bind() {
     this.onStart = this.onStart.bind(this);
+
     this.onMove = this.onMove.bind(this);
     this.onEnd = this.onEnd.bind(this);
   }

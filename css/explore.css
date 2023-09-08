@@ -20,3 +20,23 @@
     font-size: clamp(0.9rem, calc((23vw / 10) - 100%), 1.5rem);
   }
 }
+
+@media (max-width: 47.5em) {
+  .explore {
+    flex-direction: column;
+
+    margin: 3rem 2rem;
+  }
+
+  .explore__info {
+    text-align: center;
+  }
+
+  .explore__info h2 {
+    margin: 1rem 0;
+    font-size: 2.5vw;
+  }
+  .explore__info p {
+    font-size: 2.2vw;
+  }
+}

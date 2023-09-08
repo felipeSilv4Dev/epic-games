@@ -121,3 +121,16 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 36em) {
+  .footer__resource--list {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer__copy {
+    text-align: center;
+    max-width: initial;
+    margin: 3rem 2rem;
+  }
+}

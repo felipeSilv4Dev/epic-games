@@ -98,4 +98,26 @@
   .group__mobile-container-info span {
     font-size: 2.8vw;
   }
+
+  .group_2 {
+    margin: 5rem 2rem;
+    overflow-x: scroll;
+  }
+
+  .group_2 .group__container {
+    flex: 0 0 80vw;
+    flex-shrink: 0;
+  }
+
+  .group__container h3 {
+    font-size: 2.55vw;
+  }
+
+  .group__container p {
+    font-size: 1.97vw;
+  }
+
+  .group__container span {
+    font-size: 2.55vw;
+  }
 }

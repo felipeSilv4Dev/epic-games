@@ -1,4 +1,4 @@
-.list {
+.slide-l {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.1rem;

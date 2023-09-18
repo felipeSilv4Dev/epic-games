@@ -1,5 +1,4 @@
 export default function SlideGames() {}
-
 class Slide {
   constructor(wrapper, slide, quantity) {
     this.slide = document.querySelector(slide);
@@ -148,7 +147,7 @@ class Control extends Slide {
     control.dataset.control = "slide";
     this.slideArray.forEach((_, index) => {
       control.innerHTML += `
-				<span><a href"slide${index + 1}">${index + 1}</a></span>`;
+			<span><a href"slide${index + 1}">${index + 1}</a></span>`;
     });
 
     this.wrapper.appendChild(control);
@@ -191,27 +190,51 @@ class Control extends Slide {
 }
 
 ///
-const groupM1 = new Control(".wrapper-m1", ".slide-m1", 3);
-const groupM2 = new Control(".wrapper-m2", ".slide-m2", 3);
-const home = new Control(".wrapper-h", ".slide-h", 5);
-const game1 = new Control(".wrapper-g1", ".slide-g1", 5);
-const game2 = new Control(".wrapper-g2", ".slide-g2", 5);
-const game3 = new Control(".wrapper-g3", ".slide-g3", 5);
-const list = new Control(".wrapper-l", ".slide-l", 3);
 
-groupM1.init();
-groupM1.addControl();
+const addSlide = function (e) {
+  // window.location.reload();
+  // if (window.outerWidth <= 760) {
+  //   observ++;
+  //   if (observ < 1) {
+  //   }
+  //   console.log(observ);
+  //   const groupM1 = new Control(".wrapper-m1", ".slide-m1", 3);
+  //   const groupM2 = new Control(".wrapper-m2", ".slide-m2", 3);
+  //   const home = new Control(".wrapper-h", ".slide-h", 5);
+  //   const game1 = new Control(".wrapper-g1", ".slide-g1", 5);
+  //   const game2 = new Control(".wrapper-g2", ".slide-g2", 5);
+  //   const game3 = new Control(".wrapper-g3", ".slide-g3", 5);
+  //   const list = new Control(".wrapper-l", ".slide-l", 3);
+  //   groupM1.init();
+  //   groupM1.addControl();
+  //   groupM2.init();
+  //   groupM2.addControl();
+  //   home.init();
+  //   home.addControl();
+  //   game1.init();
+  //   game2.init();
+  //   game3.init();
+  //   list.init();
+  //   list.addControl();
+  // }
+  // if (window.outerWidth > 760) {
+  //   if (!observ) {
+  //     console.log(observ);
+  //     window.location.reload();
+  //     observ = !observ;
+  //   }
+  // }
+};
 
-groupM2.init();
-groupM2.addControl();
+window.addEventListener("resize", function () {
+  if (this.innerWidth <= 760) {
+    addSlide(this);
+  }
+});
 
-home.init();
-home.addControl();
-
-game1.init();
-game2.init();
-game3.init();
-list.init();
-list.addControl();
-
+window.addEventListener("load", function () {
+  if (this.innerWidth <= 760) {
+    addSlide("");
+  }
+});
 ///////////////////////////////////////////////////////////////////////

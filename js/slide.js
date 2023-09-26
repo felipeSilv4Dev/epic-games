@@ -1,4 +1,5 @@
 export default function SlideGames() {}
+let observ = 0;
 class Slide {
   constructor(wrapper, slide, quantity) {
     this.slide = document.querySelector(slide);
@@ -17,7 +18,7 @@ class Slide {
     this.slide.style.transition = active ? " .3s" : "";
   }
   updatePosition(clientX) {
-    this.dist.movement = (this.dist.startX - clientX) * 2;
+    this.dist.movement = (this.dist.startX - clientX) * 1;
     return this.dist.finalPosition - this.dist.movement;
   }
 
@@ -72,13 +73,11 @@ class Slide {
     this.wrapper.addEventListener("mousedown", this.onStart);
     this.wrapper.addEventListener("mouseup", this.onEnd);
     this.wrapper.addEventListener("touchstart", this.onStart);
-
     this.wrapper.addEventListener("touchend", this.onEnd);
   }
 
   bind() {
     this.onStart = this.onStart.bind(this);
-
     this.onMove = this.onMove.bind(this);
     this.onEnd = this.onEnd.bind(this);
   }
@@ -187,54 +186,55 @@ class Control extends Slide {
     this.evenControl = this.evenControl.bind(this);
     this.activeControlItem = this.activeControlItem.bind(this);
   }
+
+  removeEvent() {
+    this.moveSlide(0);
+    this.wrapper.removeEventListener("mousedown", this.onStart);
+    this.wrapper.removeEventListener("mouseup", this.onEnd);
+    this.wrapper.removeEventListener("touchstart", this.onStart);
+    this.wrapper.removeEventListener("touchend", this.onEnd);
+  }
 }
 
 ///
+let hasResized = false;
 
-const addSlide = function (e) {
-  // window.location.reload();
-  // if (window.outerWidth <= 760) {
-  //   observ++;
-  //   if (observ < 1) {
-  //   }
-  //   console.log(observ);
-  //   const groupM1 = new Control(".wrapper-m1", ".slide-m1", 3);
-  //   const groupM2 = new Control(".wrapper-m2", ".slide-m2", 3);
-  //   const home = new Control(".wrapper-h", ".slide-h", 5);
-  //   const game1 = new Control(".wrapper-g1", ".slide-g1", 5);
-  //   const game2 = new Control(".wrapper-g2", ".slide-g2", 5);
-  //   const game3 = new Control(".wrapper-g3", ".slide-g3", 5);
-  //   const list = new Control(".wrapper-l", ".slide-l", 3);
-  //   groupM1.init();
-  //   groupM1.addControl();
-  //   groupM2.init();
-  //   groupM2.addControl();
-  //   home.init();
-  //   home.addControl();
-  //   game1.init();
-  //   game2.init();
-  //   game3.init();
-  //   list.init();
-  //   list.addControl();
-  // }
-  // if (window.outerWidth > 760) {
-  //   if (!observ) {
-  //     console.log(observ);
-  //     window.location.reload();
-  //     observ = !observ;
-  //   }
-  // }
+const groupM1 = new Control(".wrapper-m1", ".slide-m1", 3);
+const groupM2 = new Control(".wrapper-m2", ".slide-m2", 3);
+const home = new Control(".wrapper-h", ".slide-h", 5);
+const game1 = new Control(".wrapper-g1", ".slide-g1", 5);
+const game2 = new Control(".wrapper-g2", ".slide-g2", 5);
+const game3 = new Control(".wrapper-g3", ".slide-g3", 5);
+const list = new Control(".wrapper-l", ".slide-l", 3);
+
+const addSlide = function () {
+  if (window.innerWidth < 760 && !hasResized) {
+    groupM1.init();
+    groupM1.addControl();
+    groupM2.init();
+    groupM2.addControl();
+    home.init();
+    home.addControl();
+    game1.init();
+    game2.init();
+    game3.init();
+    list.init();
+    list.addControl();
+    hasResized = true;
+  } else if (window.innerWidth >= 760 && hasResized) {
+    // Redefina hasExecuted se a largura da janela for maior ou igual a 760 pixels
+
+    groupM1.removeEvent();
+    groupM2.removeEvent();
+    home.removeEvent();
+    game1.removeEvent();
+    game2.removeEvent();
+    game3.removeEvent();
+    list.removeEvent();
+    hasResized = false;
+  }
 };
 
-window.addEventListener("resize", function () {
-  if (this.innerWidth <= 760) {
-    addSlide(this);
-  }
-});
-
-window.addEventListener("load", function () {
-  if (this.innerWidth <= 760) {
-    addSlide("");
-  }
-});
 ///////////////////////////////////////////////////////////////////////
+
+["load", "resize"].forEach((event) => window.addEventListener(event, addSlide));

@@ -18,7 +18,7 @@ class Slide {
     this.slide.style.transition = active ? " .3s" : "";
   }
   updatePosition(clientX) {
-    this.dist.movement = (this.dist.startX - clientX) * 1.2;
+    this.dist.movement = (this.dist.startX - clientX) * 1;
     return this.dist.finalPosition - this.dist.movement;
   }
 
@@ -37,12 +37,19 @@ class Slide {
       moveType = "mousemove";
     } else {
       this.dist.startX = e.changedTouches[0].clientX;
+
       moveType = "touchmove";
     }
     this.wrapper.addEventListener(moveType, this.onMove);
     this.transition(false);
   }
   onMove(e) {
+    const distMove =
+      e.type === "touchmove" ? this.dist.startX - e.targetTouches[0].pageX : "";
+    if (distMove > 5 || distMove < -8) {
+      this.disableScroll();
+      this.regularDist();
+    }
     const typeMove =
       e.type === "mousemove" ? e.clientX : e.changedTouches[0].clientX;
     const Position = this.updatePosition(typeMove);
@@ -55,13 +62,14 @@ class Slide {
     this.dist.finalPosition = this.dist.moveEnd;
     this.transition(true);
     this.slideOnMoveEnd();
+    this.enableScroll();
   }
 
   slideOnMoveEnd() {
-    if (this.dist.movement > 20 * this.quantity && this.index.next !== "") {
+    if (this.dist.movement > 15 * this.quantity && this.index.next !== "") {
       this.nextSlide();
     } else if (
-      this.dist.movement < -(20 * this.quantity) &&
+      this.dist.movement < -(15 * this.quantity) &&
       this.index.prev !== ""
     ) {
       this.prevSlide();
@@ -75,7 +83,14 @@ class Slide {
     this.wrapper.addEventListener("mouseup", this.onEnd);
     this.wrapper.addEventListener("touchstart", this.onStart);
     this.wrapper.addEventListener("touchend", this.onEnd);
-    this.wrapper.addEventListener("click", this.onStart);
+  }
+  disableScroll() {
+    document.body.style.overflow = "hidden";
+  }
+
+  // Para reativar a rolagem
+  enableScroll() {
+    document.body.style.overflow = "auto";
   }
 
   bind() {
@@ -130,6 +145,7 @@ class Slide {
   init() {
     this.bind();
     this.transition(true);
+    this.enableScroll();
     this.addEvents();
     this.slideConfig();
     this.changeSlide(0);

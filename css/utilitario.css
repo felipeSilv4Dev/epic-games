@@ -112,8 +112,8 @@
   [data-control="slide"] span {
     display: block;
     background-color: var(--bg-10);
-    width: 1vw;
-    height: 1vw;
+    width: 0.5em;
+    height: 0.5em;
     border-radius: 50%;
     text-indent: -999rem;
     transition: all 0.3s;

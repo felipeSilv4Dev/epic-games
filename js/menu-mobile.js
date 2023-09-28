@@ -2,7 +2,7 @@ export default class MenuMobile {
   constructor(btn, btnBg) {
     this.btn = document.querySelector(btn);
     this.btnBg = document.querySelector(btnBg);
-    this.body = document.querySelector("body");
+
     this.nameclass = this.btnBg.className;
     this.active = "active";
   }
@@ -11,7 +11,7 @@ export default class MenuMobile {
 
     this.btn.classList.toggle(this.active);
     this.btnBg.classList.toggle(this.active);
-    this.body.classList.toggle(this.active);
+    document.body.style.overflow = "hidden";
   }
 
   scrollPage() {
@@ -26,6 +26,7 @@ export default class MenuMobile {
       this.btn.classList.remove(this.active);
       this.btnBg.classList.remove(this.active);
       this.body.classList.remove(this.active);
+      document.body.style.overflow = "auto";
     }
   }
 

@@ -235,7 +235,7 @@ const addSlide = function () {
   game3.regularDist();
   list.regularDist();
 
-  if (window.innerWidth < 760 && !hasResized) {
+  if (window.innerWidth <= 760 && !hasResized) {
     groupM1.init();
     groupM2.init();
     home.init();

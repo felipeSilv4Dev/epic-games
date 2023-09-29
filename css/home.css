@@ -344,11 +344,14 @@
   }
   .home__content--mobile-info {
     position: relative;
-    margin: 0 2rem;
     flex-shrink: 0;
     width: 90vw;
     max-width: 80rem;
   }
+  .home__content--mobile-info:not(:last-child) {
+    margin-right: 2rem;
+  }
+
   .home__content--mobile-info img {
     border-radius: 16px;
   }

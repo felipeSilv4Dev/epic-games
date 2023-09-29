@@ -66,13 +66,16 @@
 
 @media (max-width: 47.5em) {
   .games {
-    margin: 8.8rem 2rem;
+    margin: 8.8rem 0;
+  }
+  .games__game {
+    gap: 0;
   }
   .games__heading--arrow {
     display: none;
   }
   .games__heading {
-    margin: 0 1.6rem 1.8rem;
+    margin: 1.6rem 2rem;
   }
   .games__heading h2 {
     font-size: 2.4vw;
@@ -82,9 +85,16 @@
   }
 
   .games__game--detalis {
+    flex-shrink: 0;
     width: 80vw;
     max-width: 80vw;
-    flex-shrink: 0;
+  }
+  .games__game {
+    width: 100vw;
+  }
+  .games__game--detalis {
+    width: 396.25px;
+    margin-right: 20px;
   }
 
   .games__game--detalis h4 {

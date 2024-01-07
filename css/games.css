@@ -89,12 +89,10 @@
     width: 80vw;
     max-width: 80vw;
   }
-  .games__game {
-    width: 100vw;
-  }
+
   .games__game--detalis {
-    width: 396.25px;
-    margin-right: 20px;
+    width: 90vw;
+    margin-right: 3rem;
   }
 
   .games__game--detalis h4 {

@@ -50,7 +50,7 @@
 
 @media (max-width: 57em) {
   .list__games--heading .btn-t {
-    font-size: 1.3rem;
+    font-size: calc((20.5vw / 10));
   }
   .list__games--heading h2 {
     font-size: clamp(0.9rem, calc((23.5vw / 10) - 100%), 1.6rem);
@@ -62,7 +62,7 @@
 
 @media (max-width: 47.5em) {
   .list__games--heading h2 {
-    font-size: 2.5vw;
+    font-size: calc((23.5vw / 10));
   }
   .list__games--game img {
     height: 15vw;
@@ -84,8 +84,8 @@
     gap: 4rem;
   }
   .list__games {
-    width: 50vw;
-    max-width: 100%;
+    width: 80vw;
+    max-width: 80vw;
     flex-shrink: 0;
   }
 }

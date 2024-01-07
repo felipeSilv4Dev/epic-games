@@ -1,257 +1,85 @@
 .header {
-  padding: 0.7rem 1.6rem;
-  background: var(--bg-6);
+  padding: 2rem 2.4em;
+  background-color: var(--header-bg);
+  font-size: 1.4rem;
+}
+
+.header__logo {
+  gap: 1.5rem;
+  border-right: 2.8px solid var(--type-1-dark);
+}
+
+.logo__arrow {
+  font-size: 1.1rem;
+  color: var(--type-2-dark);
   position: relative;
+  padding: 0.5rem 0;
+  top: -0.3rem;
+  transition: all 0.2s;
 }
-.header__menu {
-  justify-content: space-between;
+.logo__arrow:hover {
+  color: var(--type-3-light);
 }
-.header__menu--logo {
-  cursor: pointer;
-  gap: 2.5rem;
+.header__nav {
+  margin-right: auto;
+  gap: 1.5rem;
 }
-.header__menu--nav {
-  gap: 2.3rem;
-  transition: all 0.3s;
-  font-size: 1.2rem;
+
+.header__nav img {
+  height: 1.6rem;
+  width: auto;
+  margin: 0 0 0 2.2rem;
 }
-.header__menu--nav a {
-  padding: 0 0.4rem;
-  position: relative;
-  color: var(--type-2);
+
+.header__nav-links a {
+  padding: 0.6rem 16px;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+
+  color: var(--type-2-dark);
+  transition: all 0.2s;
 }
-.header__menu--nav a::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  left: 0;
-  bottom: -1.6rem;
-  background-color: var(--bg-5);
-  transition: all 0.1s ease-in;
+
+.header__nav-links a:hover {
+  color: var(--type-3-light);
+  background-color: var(--type-3-dark);
 }
-.header__menu--nav a:hover::before {
-  height: 0.5rem;
-}
-.header__menu--login a {
-  color: var(--type-2);
-}
-.header__menu--nav a:hover,
-.header__menu--login a:hover,
-.header__menu--login-icon:hover {
-  color: var(--type-1);
-}
-.header__menu--login {
-  gap: 2.5rem;
-  font-size: 1.2rem;
-  transition: all 0.3s;
-}
-.header__menu--login-sign {
-  position: relative;
-  right: 12.5rem;
-  gap: 0.6rem;
-  transition: all 0.3s;
-}
-.header__menu--login-icon {
-  color: var(--type-2);
+
+.header__login {
+  gap: 1.5rem;
   text-align: center;
-  position: relative;
-  right: 12.5rem;
-  top: 0.3rem;
-  font-size: 2.4rem;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.fa-solid {
-  font-size: 1.6rem;
-  transition: all 0.01s;
-}
-a.btn {
-  position: absolute;
-  right: 0;
-  padding: 1.58rem 2.4rem;
-  background-color: var(--bg-5);
-  color: var(--type-1);
-  transition: all 0.3s;
-}
-a.btn:hover {
-  background-color: var(--bg-7);
-  color: var(--type-1);
-}
-.menu__mobile-bg {
-  display: none;
-  position: absolute;
-  width: 6.7rem;
-  height: 100%;
-  right: 0;
-  background-color: var(--bg-5);
-  cursor: pointer;
-}
-.menu__mobile {
-  cursor: pointer;
-  position: absolute;
-  display: none;
-  border: none;
-  width: 3.4rem;
-  left: 50%;
-  z-index: 99;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 0.3rem;
-}
-.menu__mobile::before {
-  content: "";
-  transition: all 0.3s;
-  position: relative;
-  display: block;
-  width: 3.4rem;
-  height: 0.2rem;
-  top: -0.9rem;
-  background-color: var(--type-1);
-  z-index: 9;
-}
-.menu__mobile::after {
-  transition: all 0.3s;
-  position: relative;
-  bottom: -0.9rem;
-  content: "";
-  display: block;
-  width: 3.4rem;
-  height: 0.2rem;
-  background-color: var(--type-1);
-  z-index: 9;
-}
-.mobile__bg {
-  display: none;
 }
 
-@media (max-width: 57em) {
-  .header__menu--nav {
-    font-size: 1.3rem;
-  }
-  .fa-solid {
-    font-size: 1.8rem;
-  }
-  .header__menu--login {
-    font-size: 1.3rem;
-  }
-  a.btn {
-    padding: 1.48rem 2.4rem;
-  }
-  .header__menu--login-icon {
-    font-size: 2.1rem;
-  }
+.header__login .globe {
+  font-size: 1.8rem;
+  transition: all 0.2s;
+  color: var(--type-2-dark);
 }
 
-@media (max-width: 47.5em) {
-  .header__menu--logo img {
-    height: 5rem;
-    width: auto;
-  }
-  .main {
-    overflow-x: hidden;
-    position: relative;
-  }
-  .menu__mobile-bg,
-  .menu__mobile {
-    display: block;
-  }
-  .menu__mobile-bg.active {
-    background-color: var(--bg-4);
-  }
-  .menu__mobile-bg.active .menu__mobile {
-    background-color: transparent;
-  }
-  .menu__mobile-bg.active .menu__mobile::before {
-    transform: rotate(45deg);
-    top: -0.1rem;
-    color: var(--type-9);
-  }
-  .menu__mobile-bg.active .menu__mobile::after {
-    transform: rotate(-45deg);
-    top: -0.3rem;
-    color: var(--type-9);
-  }
+.header__login .login {
+  color: var(--type-2-dark);
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  height: 3rem;
+  width: 3rem;
+  transition: all 0.2s;
+  background-color: var(--type-1-dark);
+  border-radius: 50%;
+}
+.header__login .globe:hover,
+.header__login .login:hover {
+  color: var(--type-3-light);
+}
 
-  .header__menu--nav.hidden,
-  .header__menu--login.hidden {
-    display: none;
-  }
-  .header__menu--nav a::before {
-    display: none;
-  }
-  .mobile__bg {
-    display: grid;
-    height: 100%;
-    width: 100vw;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 23;
-    transition: all 0.2s;
-    transform: translateX(1000px);
-  }
+.btn__download {
+  padding: 0.6rem 1.2rem;
+  color: var(--type-3-dark);
+  background-color: var(--btn-1);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
 
-  .mobile__bg.active {
-    transform: translateX(0);
-  }
-
-  .mobile__container {
-    position: absolute;
-    right: 0;
-    width: 90vw;
-    height: 100vh;
-    background-color: var(--bg-6);
-    z-index: 24;
-  }
-  .mobile__nav a {
-    font-size: 1.8rem;
-    display: block;
-    color: var(--type-9);
-    padding: 1rem 2rem;
-    letter-spacing: 0.3rem;
-    border-bottom: 1px solid var(--bg-8);
-  }
-  .mobile__login {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    width: 100%;
-    bottom: 3.2em;
-    gap: 0;
-    text-align: center;
-    font-size: 2rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-  }
-  .header__menu--login-icon {
-    position: initial;
-    grid-row: 2;
-    grid-column: 2;
-    border-top: 1px solid var(--bg-8);
-    border-left: 1px solid var(--bg-8);
-    padding: 1rem;
-    font-size: 3rem;
-  }
-  .mobile__sign {
-    display: block;
-    position: initial;
-    border-top: 1px solid var(--bg-8);
-    padding: 1.5rem 0;
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .mobile__sign .fa-solid {
-    margin-right: 1rem;
-    font-size: 2.5rem;
-  }
-  .btn--download.mobile__download {
-    position: initial;
-    grid-column: 1/-1;
-    padding: 2rem 1rem;
-    width: 100%;
-    grid-row: 3;
-  }
+.btn__download:hover {
+  background-color: var(--btn-2);
 }

@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -26,75 +26,48 @@
     <title>Epic Games</title>
   </head>
   <body>
-    <header class="header" id="menu">
-      <div class="header__menu container flex">
-        <div class="header__menu--logo flex">
-          <img src="./img/menu/logo.svg" width="24" height="29" alt="Logo" />
-
-          <nav>
-            <ul class="header__menu--nav menu--hidden hidden flex">
-              <li><a href="#estore">STORE</a></li>
-              <li><a href="#faq">faq</a></li>
-              <li><a href="#help">Help</a></li>
-              <li><a href="#unreal">UNREAL ENGINE</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__menu--login menu--hidden hidden flex">
-          <i class="icon-basic-world header__menu--login-icon"></i>
-
-          <a class="header__menu--login-sign flex" href="#sign"
-            ><i class="fa-solid fa-user-plus"></i>sign in</a
-          >
-          <a class="btn btn--download" href="#download">Download</a>
-        </div>
-
-        <div class="menu__mobile-bg">
-          <a href="#menu">
-            <button class="menu__mobile"></button>
+    <header class="header">
+      <div class="flex">
+        <div class="header__logo flex">
+          <a href="#logo">
+            <img
+              src="./img/header/header-logo.png"
+              width="24"
+              height="29"
+              alt="Logo"
+            />
           </a>
+          <a href="#arrow">
+            <i class="logo__arrow fa-solid fa-chevron-down"></i>
+          </a>
+          <span></span>
+        </div>
+
+        <div class="header__nav flex">
+          <a href="#store">
+            <img src="./img/header/header-store.png" alt="store" />
+          </a>
+          <ul class="header__nav-links flex">
+            <li><a href="#distri">Distribuição</a></li>
+            <li><a href="#distri">Suporte</a></li>
+            <li><a href="#distri">Unreal Engine</a></li>
+          </ul>
+        </div>
+
+        <div class="header__login flex">
+          <a href="#gloe">
+            <i class="globe fa-solid fa-globe"></i>
+          </a>
+          <a href="#login">
+            <i class="login fa-solid fa-user"></i>
+          </a>
+          <a class="btn__download" href="#download">Download</a>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <div class="mobile__bg">
-        <div class="mobile__container">
-          <nav>
-            <ul class="header__menu--nav mobile__nav">
-              <li><a href="#estore">STORE</a></li>
-              <li><a href="#faq">faq</a></li>
-              <li><a href="#help">Help</a></li>
-              <li><a href="#unreal">UNREAL ENGINE</a></li>
-            </ul>
-          </nav>
-
-          <div class="header__menu--login mobile__login flex">
-            <i class="icon-basic-world header__menu--login-icon"></i>
-
-            <a class="header__menu--login-sign mobile__sign flex" href="#sign"
-              ><i class="fa-solid fa-user-plus"></i>sign in</a
-            >
-
-            <a class="btn btn--download mobile__download" href="#download"
-              >Download</a
-            >
-          </div>
-        </div>
-      </div>
-
+    <main>
       <section class="home">
-        <div class="home__menu flex">
-          <div class="home__menu--search flex">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" name="search" placeholder="Search Store" />
-          </div>
-
-          <a href="#discover">discover </a>
-          <a href="#browser">browse</a>
-          <a href="#news">news</a>
-        </div>
-
         <div class="home__menu-mobile">
           <div class="mobile__search flex">
             <i class="fa-solid btn__search fa-magnifying-glass"></i>

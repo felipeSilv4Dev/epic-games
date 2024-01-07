@@ -13,38 +13,35 @@ ul,
 li {
   list-style: none;
 }
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background: var(--body-bg);
+}
+body,
 a {
   text-decoration: none;
-}
-body {
-  margin: 0 auto;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background: var(--bg-2);
-  font-weight: 400;
-  color: var(--type-1);
+  color: var(--type-1-light);
 }
 
-.main {
-  max-width: 140rem;
-  margin: 0 auto;
-  padding: 0 clamp(5rem, calc(67.5% / 5), 18.1rem);
+main {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 a,
 h1,
 h2,
 h3,
 h4 {
   font-weight: 400;
-  color: var(--type-1);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 @media (min-width: 112.5em) {
   html {
-    font-size: 75%;
-  }
-  .main {
-    max-width: 160rem;
+    font-size: 71.4287%;
   }
 }
 
@@ -52,23 +49,10 @@ h4 {
   html {
     font-size: 56.25%;
   }
-  .main {
-    max-width: 140rem;
-  }
 }
 
 @media (max-width: 57em) {
   html {
     font-size: 50%;
-  }
-  .main {
-    max-width: 120rem;
-    padding: 1.6rem;
-  }
-}
-
-@media (max-width: 47.5em) {
-  .main {
-    padding: 1.6rem 0;
   }
 }
